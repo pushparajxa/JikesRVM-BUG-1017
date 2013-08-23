@@ -1,0 +1,11 @@
+Exception in thread "MainThread" java.lang.IllegalMonitorStateException: biased unlocking: we don't own this objectb@2585b7cc
+   at java.lang.Exception.<init>(Exception.java:78)
+   at java.lang.RuntimeException.<init>(RuntimeException.java:76)
+   at java.lang.IllegalMonitorStateException.<init>(IllegalMonitorStateException.java:76)
+   at org.jikesrvm.scheduler.RVMThread.raiseIllegalMonitorStateException(RVMThread.java:3285)
+   at org.jikesrvm.scheduler.ThinLock.unlock(ThinLock.java:190)
+   at org.jikesrvm.objectmodel.JavaHeader.genericUnlock(JavaHeader.java:578)
+   at org.jikesrvm.objectmodel.ObjectModel.genericUnlock(ObjectModel.java:479)
+   at a_lk.sync(m_lk.java:9)
+   at a_lk.main(m_lk.java:4)
+

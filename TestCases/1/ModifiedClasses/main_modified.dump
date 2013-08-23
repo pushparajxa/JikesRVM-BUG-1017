@@ -1,0 +1,35 @@
+********* START OF IR DUMP  Initial HIR   FOR < SystemAppCL, La_lk; >.main ([Ljava/lang/String;)V
+-13	    LABEL0   Frequency:  0.0
+-2	EG  ir_prologue             l0a([Ljava/lang/String;,d) = 
+0	    guard_move              t2v(GUARD) = <TRUEGUARD>
+0	EG  new                     t1a(La_lk;,x,p) = a_lk
+-2	    ref_move                l3a(La_lk;,x,p) = t1a(La_lk;,x,p)
+-1	    ref_move                l4a(La_lk;) = l3a(La_lk;,x,p)
+-2	    ref_move                l5a(La_lk;,x,p) = l3a(La_lk;,x,p)
+-1	    ref_move                l6a(La_lk;) = l5a(La_lk;,x,p)
+7	    guard_move              t8v(GUARD) = t2v(GUARD)
+7	    ref_move                l7a(La_lk;,x,p) = t1a(La_lk;,x,p)
+-2	    ref_move                l9pa(La_lk;,x,p) = l7a(La_lk;,x,p)
+-1	    ref_move                l10pa(La_lk;) = l9pa(La_lk;,x,p)
+-6	 G  monitorenter            l10pa(La_lk;), <TRUEGUARD>
+-1	    bbend                   BB0 (ENTRY)
+0	    LABEL1   Frequency:  0.0
+0	    guard_move              t13v(GUARD) = <TRUEGUARD>
+0	EG  new_unresolved          t12a(Lb;,p) = Lb;
+4	EG  resolve_member          t14a(Lorg/vmmagic/unboxed/Offset;) = special_exact<< SystemAppCL, Lb;, <init>, ()V >>
+4	EG  call                     AF CF OF PF ZF ESP = t14a(Lorg/vmmagic/unboxed/Offset;), special_exact<< SystemAppCL, Lb;, <init>, ()V >>, 
+t13v(GUARD), t12a(Lb;,p) ESP
+7	    guard_move              t15v(GUARD) = t13v(GUARD)
+7	    ref_move                l9pa(Lb;,p) = t12a(Lb;,p)
+-1	    bbend                   BB1
+-3	    LABEL2   Frequency:  0.0
+-7	EG  monitorexit             l10pa(La_lk;), <TRUEGUARD>
+-3	    return                  <unused>
+-1	    bbend                   BB2
+-5	    LABEL3   Frequency:  0.0
+-5	    get_caught_exception    t11a(Ljava/lang/Throwable;) = 
+-11	EG  call                     AF CF OF PF ZF ESP = Addr 0x00001134, static"< BootstrapCL, Lorg/jikesrvm/runtime/RuntimeEntrypoints; >.unlockAndThrow (Ljava/lang/Object;Ljava/lang/Throwable;)V", 
+<unused>, l10pa(La_lk;), t11a(Ljava/lang/Throwable;) ESP
+-1	    bbend                   BB3 (catches java.lang.Throwable for BB1)
+*********   END OF IR DUMP  Initial HIR   FOR < SystemAppCL, La_lk; >.main ([Ljava/lang/String;)V
+

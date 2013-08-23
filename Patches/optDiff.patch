@@ -1,0 +1,165 @@
+Only in ./: optDiff.patch
+diff -ubr ../../../New_UnMd2/rvm/src/org/jikesrvm/compilers/opt/bc2ir/GenerationContext.java ./org/jikesrvm/compilers/opt/bc2ir/GenerationContext.java
+--- ../../../New_UnMd2/rvm/src/org/jikesrvm/compilers/opt/bc2ir/GenerationContext.java	2013-03-14 15:01:46.000000000 -0700
++++ ./org/jikesrvm/compilers/opt/bc2ir/GenerationContext.java	2013-04-29 18:27:17.721517130 -0700
+@@ -77,12 +77,10 @@
+    * The original method (root of the calling context tree)
+    */
+   NormalMethod original_method;
+-
+   /**
+    * The compiled method assigned for this compilation of original_method
+    */
+   CompiledMethod original_cm;
+-
+   /**
+    * The method to be generated
+    */
+@@ -113,7 +111,6 @@
+    * for the entry basic block.
+    */
+   Operand[] arguments;
+-
+   /**
+    * The basic block into which BC2IR's caller will generate a "prologue."
+    * BC2IR will add a CFG edge from prologue to the block containing the
+@@ -156,7 +153,6 @@
+    * synchronized methods.
+    */
+   BasicBlock unlockAndRethrow;
+-
+   /**
+    * The Register to which BC2IR should assign the return value(s)
+    * of the method. It will be null when the method has a void return.
+@@ -192,7 +188,8 @@
+    * Did BC2IR encounter a magic that requires us to allocate a stack frame?
+    */
+   public boolean allocFrame;
+-
++  public RegisterOperand cachedThis;
++  public Register thisReg;
+   /**
+    * Used to communicate the meet of the return values back to the caller
+    * Mainly useful when BC2IR is doing inlining....allows the caller
+@@ -249,6 +246,7 @@
+     int numParams = params.length;
+     int argIdx = 0;
+     int localNum = 0;
++    //arguments = new Operand[method.isStatic() ? numParams : numParams + 1];
+     arguments = new Operand[method.isStatic() ? numParams : numParams + 1];
+     // Insert IR_PROLOGUE instruction.  Loop below will fill in its operands
+     Instruction prologueInstr = Prologue.create(IR_PROLOGUE, arguments.length);
+@@ -256,8 +254,7 @@
+ 
+     if (!method.isStatic()) {
+       TypeReference thisType = meth.getDeclaringClass().getTypeRef();
+-      RegisterOperand thisOp = makeLocal(localNum, thisType);
+-      // The this param of a virtual method is by definition non null
++      RegisterOperand thisOp = makeLocal(localNum, thisType);// The this param of a virtual method is by definition non null
+       RegisterOperand guard = makeNullCheckGuard(thisOp.getRegister());
+       BC2IR.setGuard(thisOp, guard);
+       appendInstruction(prologue, Move.create(GUARD_MOVE, guard.copyRO(), new TrueGuardOperand()), PROLOGUE_BCI);
+@@ -268,6 +265,11 @@
+       }
+       arguments[0] = thisOp;
+       Prologue.setFormal(prologueInstr, 0, thisOp.copyU2D());
++      /* simulating aload0 , astore_method.getLocalWords-1*/
++       thisReg = temps.getReg(thisType);
++      //thisReg.setLocal();
++      cachedThis  = new RegisterOperand(thisReg,thisType);
++      appendInstruction(prologue, Move.create(IRTools.getMoveOp(thisType),cachedThis, thisOp), PROLOGUE_BCI);
+       argIdx++;
+       localNum++;
+     }
+@@ -290,9 +292,7 @@
+     if (returnType != TypeReference.Void) {
+       resultReg = temps.makeTemp(returnType).getRegister();
+     }
+-
+     enclosingHandlers = null;
+-
+     completePrologue(true);
+     completeEpilogue(true);
+     completeExceptionHandlers(true);
+@@ -335,11 +335,11 @@
+       child.arguments[i] = Call.getParam(callSite, i).copy(); // copy instead
+       // of clearing in case inlining aborts.
+     }
++    //child.arguments[child.numberOfArgs-1]=Call.getParam(callSite, 0).copy();
+     if (Call.hasResult(callSite)) {
+       child.resultReg = Call.getResult(callSite).copyD2D().getRegister();
+       child.resultReg.setSpansBasicBlock(); // it will...
+     }
+-
+     // Initialize the child CFG, prologue, and epilogue blocks
+     child.cfg = new ControlFlowGraph(parent.cfg.numberOfNodes());
+     child.prologue = new BasicBlock(PROLOGUE_BCI, child.inlineSequence, child.cfg);
+@@ -348,10 +348,8 @@
+     child.epilogue.exceptionHandlers = ebag;
+     child.cfg.addLastInCodeOrder(child.prologue);
+     child.cfg.addLastInCodeOrder(child.epilogue);
+-
+     // Set up the local pool
+     child.initLocalPool();
+-
+     // Insert moves from child.arguments to child's locals in prologue
+     TypeReference[] params = child.method.getParameterTypes();
+     int numParams = params.length;
+@@ -369,10 +367,10 @@
+           objPtr.setDeclaredType();
+           objPtr.setType(child.method.getDeclaringClass().getTypeRef());
+         }
++        RegisterOperand myOp = objPtr.copyRO();
+         local = child.makeLocal(localNum, objPtr);
+         localNum++;
+-        child.arguments[0] = local; // Avoid confusion in BC2IR of callee
+-        // when objPtr is a local in the caller.
++        child.arguments[0] = local;
+       } else if (receiver.isConstant()) {
+         local = child.makeLocal(localNum, receiver.getType());
+         localNum++;
+@@ -384,10 +382,18 @@
+       } else {
+         OptimizingCompilerException.UNREACHABLE("Unexpected receiver operand");
+       }
+-      Instruction s = Move.create(REF_MOVE, local, receiver);
++Instruction s = Move.create(REF_MOVE, local, receiver);
+       s.bcIndex = PROLOGUE_BCI;
+       s.position = callSite.position;
+       child.prologue.appendInstruction(s);
++  if(local!=null){
++   child.thisReg = child.temps.getReg(local.getType());
++   //child.thisReg.setLocal();
++  child.cachedThis  = new RegisterOperand(child.thisReg,local.getType());
++ Instruction n = Move.create(IRTools.getMoveOp(local.getType()),child.cachedThis, local);
++  //s.bcIndex = PROLOGUE_BCI;
++  child.prologue.appendInstruction(n);
++ }
+     }
+     for (int paramIdx = 0; paramIdx < numParams; paramIdx++, argIdx++) {
+       TypeReference argType = params[paramIdx];
+@@ -418,7 +424,6 @@
+         localNum++; // longs and doubles take two local words
+       }
+     }
+-
+     child.completePrologue(false);
+     child.completeEpilogue(false);
+     child.completeExceptionHandlers(false);
+@@ -774,7 +779,9 @@
+       Offset offs = Offset.fromIntSignExtend(Statics.findOrCreateObjectLiteral(klass));
+       return new ClassConstantOperand(klass, offs);
+     } else {
+-      return makeLocal(0, arguments[0].getType());
++   return new RegisterOperand(cachedThis.getRegister(), method.getDeclaringClass().getTypeRef());
++ //return new RegisterOperand(addressLocals[method.getLocalWords()],arguments[arguments.length-1].getType());
++   //new RegisterOperand(, type);
+     }
+   }
+ 
+@@ -833,3 +840,4 @@
+ 
+ }
+ 
++
+Only in ./org/jikesrvm/compilers/opt/bc2ir: GenerationContext.java~

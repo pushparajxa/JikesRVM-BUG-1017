@@ -1,0 +1,2995 @@
+baseline Start: Final machine code for method java.util.logging.Level <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/util/logging/Level; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13801                  | 68E9350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/logging/Level; >
+00002D|          PUSH                  20                  | 6A14
+00002F|          PUSH           [570885AC]                 | FF35AC850857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3944                  | 68680F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] ldc 32
+000054|          PUSH           [57088580]                 | FF3580850857
+[6] ldc 33
+00005A|          PUSH           [5707FA6C]                 | FF356CFA0757
+[8] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000060|          MOV                  EAX           8[ESP] | 8B442408
+000064|          MOV                  EDX           4[ESP] | 8B542404
+000068|          CALL           [57089FD0]                 | FF15D09F0857
+[11] putstatic < BootstrapCL, Ljava/util/logging/Level;, OFF, Ljava/util/logging/Level; >
+00006E|          POP            [57089FA8]                 | 8F05A89F0857
+[14] new < BootstrapCL, Ljava/util/logging/Level; >
+000074|          PUSH                  20                  | 6A14
+000076|          PUSH           [570885AC]                 | FF35AC850857
+00007C|          PUSH                   0                  | 6A00
+00007E|          PUSH                   0                  | 6A00
+000080|          PUSH                   4                  | 6A04
+000082|          PUSH                   8                  | 6A08
+000084|          PUSH                3945                  | 68690F0000
+000089|          MOV                  EAX          24[ESP] | 8B442418
+00008D|          MOV                  EDX          20[ESP] | 8B542414
+000091|          CALL           [57081340]                 | FF1540130857
+000097|          PUSH                 EAX                  | 50
+[17] dup
+000098|          PUSH                [ESP]                 | FF3424
+[18] ldc 40
+00009B|          PUSH           [57088584]                 | FF3584850857
+[20] sipush 1000
+0000A1|          PUSH                1000                  | 68E8030000
+[23] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0000A6|          MOV                  EAX           8[ESP] | 8B442408
+0000AA|          MOV                  EDX           4[ESP] | 8B542404
+0000AE|          CALL           [57089FD0]                 | FF15D09F0857
+[26] putstatic < BootstrapCL, Ljava/util/logging/Level;, SEVERE, Ljava/util/logging/Level; >
+0000B4|          POP            [57089FAC]                 | 8F05AC9F0857
+[29] new < BootstrapCL, Ljava/util/logging/Level; >
+0000BA|          PUSH                  20                  | 6A14
+0000BC|          PUSH           [570885AC]                 | FF35AC850857
+0000C2|          PUSH                   0                  | 6A00
+0000C4|          PUSH                   0                  | 6A00
+0000C6|          PUSH                   4                  | 6A04
+0000C8|          PUSH                   8                  | 6A08
+0000CA|          PUSH                3946                  | 686A0F0000
+0000CF|          MOV                  EAX          24[ESP] | 8B442418
+0000D3|          MOV                  EDX          20[ESP] | 8B542414
+0000D7|          CALL           [57081340]                 | FF1540130857
+0000DD|          PUSH                 EAX                  | 50
+[32] dup
+0000DE|          PUSH                [ESP]                 | FF3424
+[33] ldc 43
+0000E1|          PUSH           [57088588]                 | FF3588850857
+[35] sipush 900
+0000E7|          PUSH                 900                  | 6884030000
+[38] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0000EC|          MOV                  EAX           8[ESP] | 8B442408
+0000F0|          MOV                  EDX           4[ESP] | 8B542404
+0000F4|          CALL           [57089FD0]                 | FF15D09F0857
+[41] putstatic < BootstrapCL, Ljava/util/logging/Level;, WARNING, Ljava/util/logging/Level; >
+0000FA|          POP            [57089FB0]                 | 8F05B09F0857
+[44] new < BootstrapCL, Ljava/util/logging/Level; >
+000100|          PUSH                  20                  | 6A14
+000102|          PUSH           [570885AC]                 | FF35AC850857
+000108|          PUSH                   0                  | 6A00
+00010A|          PUSH                   0                  | 6A00
+00010C|          PUSH                   4                  | 6A04
+00010E|          PUSH                   8                  | 6A08
+000110|          PUSH                3947                  | 686B0F0000
+000115|          MOV                  EAX          24[ESP] | 8B442418
+000119|          MOV                  EDX          20[ESP] | 8B542414
+00011D|          CALL           [57081340]                 | FF1540130857
+000123|          PUSH                 EAX                  | 50
+[47] dup
+000124|          PUSH                [ESP]                 | FF3424
+[48] ldc 46
+000127|          PUSH           [5708858C]                 | FF358C850857
+[50] sipush 800
+00012D|          PUSH                 800                  | 6820030000
+[53] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000132|          MOV                  EAX           8[ESP] | 8B442408
+000136|          MOV                  EDX           4[ESP] | 8B542404
+00013A|          CALL           [57089FD0]                 | FF15D09F0857
+[56] putstatic < BootstrapCL, Ljava/util/logging/Level;, INFO, Ljava/util/logging/Level; >
+000140|          POP            [57089FB4]                 | 8F05B49F0857
+[59] new < BootstrapCL, Ljava/util/logging/Level; >
+000146|          PUSH                  20                  | 6A14
+000148|          PUSH           [570885AC]                 | FF35AC850857
+00014E|          PUSH                   0                  | 6A00
+000150|          PUSH                   0                  | 6A00
+000152|          PUSH                   4                  | 6A04
+000154|          PUSH                   8                  | 6A08
+000156|          PUSH                3948                  | 686C0F0000
+00015B|          MOV                  EAX          24[ESP] | 8B442418
+00015F|          MOV                  EDX          20[ESP] | 8B542414
+000163|          CALL           [57081340]                 | FF1540130857
+000169|          PUSH                 EAX                  | 50
+[62] dup
+00016A|          PUSH                [ESP]                 | FF3424
+[63] ldc 49
+00016D|          PUSH           [57088590]                 | FF3590850857
+[65] sipush 700
+000173|          PUSH                 700                  | 68BC020000
+[68] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000178|          MOV                  EAX           8[ESP] | 8B442408
+00017C|          MOV                  EDX           4[ESP] | 8B542404
+000180|          CALL           [57089FD0]                 | FF15D09F0857
+[71] putstatic < BootstrapCL, Ljava/util/logging/Level;, CONFIG, Ljava/util/logging/Level; >
+000186|          POP            [57089FB8]                 | 8F05B89F0857
+[74] new < BootstrapCL, Ljava/util/logging/Level; >
+00018C|          PUSH                  20                  | 6A14
+00018E|          PUSH           [570885AC]                 | FF35AC850857
+000194|          PUSH                   0                  | 6A00
+000196|          PUSH                   0                  | 6A00
+000198|          PUSH                   4                  | 6A04
+00019A|          PUSH                   8                  | 6A08
+00019C|          PUSH                3949                  | 686D0F0000
+0001A1|          MOV                  EAX          24[ESP] | 8B442418
+0001A5|          MOV                  EDX          20[ESP] | 8B542414
+0001A9|          CALL           [57081340]                 | FF1540130857
+0001AF|          PUSH                 EAX                  | 50
+[77] dup
+0001B0|          PUSH                [ESP]                 | FF3424
+[78] ldc 52
+0001B3|          PUSH           [57088594]                 | FF3594850857
+[80] sipush 500
+0001B9|          PUSH                 500                  | 68F4010000
+[83] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0001BE|          MOV                  EAX           8[ESP] | 8B442408
+0001C2|          MOV                  EDX           4[ESP] | 8B542404
+0001C6|          CALL           [57089FD0]                 | FF15D09F0857
+[86] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINE, Ljava/util/logging/Level; >
+0001CC|          POP            [57089FBC]                 | 8F05BC9F0857
+[89] new < BootstrapCL, Ljava/util/logging/Level; >
+0001D2|          PUSH                  20                  | 6A14
+0001D4|          PUSH           [570885AC]                 | FF35AC850857
+0001DA|          PUSH                   0                  | 6A00
+0001DC|          PUSH                   0                  | 6A00
+0001DE|          PUSH                   4                  | 6A04
+0001E0|          PUSH                   8                  | 6A08
+0001E2|          PUSH                3950                  | 686E0F0000
+0001E7|          MOV                  EAX          24[ESP] | 8B442418
+0001EB|          MOV                  EDX          20[ESP] | 8B542414
+0001EF|          CALL           [57081340]                 | FF1540130857
+0001F5|          PUSH                 EAX                  | 50
+[92] dup
+0001F6|          PUSH                [ESP]                 | FF3424
+[93] ldc 55
+0001F9|          PUSH           [57088598]                 | FF3598850857
+[95] sipush 400
+0001FF|          PUSH                 400                  | 6890010000
+[98] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000204|          MOV                  EAX           8[ESP] | 8B442408
+000208|          MOV                  EDX           4[ESP] | 8B542404
+00020C|          CALL           [57089FD0]                 | FF15D09F0857
+[101] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINER, Ljava/util/logging/Level; >
+000212|          POP            [57089FC0]                 | 8F05C09F0857
+[104] new < BootstrapCL, Ljava/util/logging/Level; >
+000218|          PUSH                  20                  | 6A14
+00021A|          PUSH           [570885AC]                 | FF35AC850857
+000220|          PUSH                   0                  | 6A00
+000222|          PUSH                   0                  | 6A00
+000224|          PUSH                   4                  | 6A04
+000226|          PUSH                   8                  | 6A08
+000228|          PUSH                3951                  | 686F0F0000
+00022D|          MOV                  EAX          24[ESP] | 8B442418
+000231|          MOV                  EDX          20[ESP] | 8B542414
+000235|          CALL           [57081340]                 | FF1540130857
+00023B|          PUSH                 EAX                  | 50
+[107] dup
+00023C|          PUSH                [ESP]                 | FF3424
+[108] ldc 58
+00023F|          PUSH           [5708859C]                 | FF359C850857
+[110] sipush 300
+000245|          PUSH                 300                  | 682C010000
+[113] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+00024A|          MOV                  EAX           8[ESP] | 8B442408
+00024E|          MOV                  EDX           4[ESP] | 8B542404
+000252|          CALL           [57089FD0]                 | FF15D09F0857
+[116] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINEST, Ljava/util/logging/Level; >
+000258|          POP            [57089FC4]                 | 8F05C49F0857
+[119] new < BootstrapCL, Ljava/util/logging/Level; >
+00025E|          PUSH                  20                  | 6A14
+000260|          PUSH           [570885AC]                 | FF35AC850857
+000266|          PUSH                   0                  | 6A00
+000268|          PUSH                   0                  | 6A00
+00026A|          PUSH                   4                  | 6A04
+00026C|          PUSH                   8                  | 6A08
+00026E|          PUSH                3952                  | 68700F0000
+000273|          MOV                  EAX          24[ESP] | 8B442418
+000277|          MOV                  EDX          20[ESP] | 8B542414
+00027B|          CALL           [57081340]                 | FF1540130857
+000281|          PUSH                 EAX                  | 50
+[122] dup
+000282|          PUSH                [ESP]                 | FF3424
+[123] ldc 61
+000285|          PUSH           [570885A0]                 | FF35A0850857
+[125] ldc 62
+00028B|          PUSH           [5707FB48]                 | FF3548FB0757
+[127] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000291|          MOV                  EAX           8[ESP] | 8B442408
+000295|          MOV                  EDX           4[ESP] | 8B542404
+000299|          CALL           [57089FD0]                 | FF15D09F0857
+[130] putstatic < BootstrapCL, Ljava/util/logging/Level;, ALL, Ljava/util/logging/Level; >
+00029F|          POP            [57089FC8]                 | 8F05C89F0857
+[133] bipush 9
+0002A5|          PUSH                   9                  | 6A09
+[135] anewarray new < BootstrapCL, [Ljava/util/logging/Level; >
+0002A7|          PUSH                   2                  | 6A02
+0002A9|          PUSH                  12                  | 6A0C
+0002AB|          PUSH           [570885B0]                 | FF35B0850857
+0002B1|          PUSH                   0                  | 6A00
+0002B3|          PUSH                   4                  | 6A04
+0002B5|          PUSH                  12                  | 6A0C
+0002B7|          PUSH                3953                  | 68710F0000
+0002BC|          MOV                  EAX          28[ESP] | 8B44241C
+0002C0|          MOV                  EDX          24[ESP] | 8B542418
+0002C4|          CALL           [57081350]                 | FF1550130857
+0002CA|          PUSH                 EAX                  | 50
+[138] dup
+0002CB|          PUSH                [ESP]                 | FF3424
+[139] iconst_0
+0002CE|          PUSH                   0                  | 6A00
+[140] getstatic < BootstrapCL, Ljava/util/logging/Level;, ALL, Ljava/util/logging/Level; >
+0002D0|          PUSH           [57089FC8]                 | FF35C89F0857
+[143] aastore
+0002D6|          MOV                  EAX           8[ESP] | 8B442408
+0002DA|          MOV                  EDX           4[ESP] | 8B542404
+0002DE|          CALL           [57081328]                 | FF1528130857
+[144] dup
+0002E4|          PUSH                [ESP]                 | FF3424
+[145] iconst_1
+0002E7|          PUSH                   1                  | 6A01
+[146] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINEST, Ljava/util/logging/Level; >
+0002E9|          PUSH           [57089FC4]                 | FF35C49F0857
+[149] aastore
+0002EF|          MOV                  EAX           8[ESP] | 8B442408
+0002F3|          MOV                  EDX           4[ESP] | 8B542404
+0002F7|          CALL           [57081328]                 | FF1528130857
+[150] dup
+0002FD|          PUSH                [ESP]                 | FF3424
+[151] iconst_2
+000300|          PUSH                   2                  | 6A02
+[152] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINER, Ljava/util/logging/Level; >
+000302|          PUSH           [57089FC0]                 | FF35C09F0857
+[155] aastore
+000308|          MOV                  EAX           8[ESP] | 8B442408
+00030C|          MOV                  EDX           4[ESP] | 8B542404
+000310|          CALL           [57081328]                 | FF1528130857
+[156] dup
+000316|          PUSH                [ESP]                 | FF3424
+[157] iconst_3
+000319|          PUSH                   3                  | 6A03
+[158] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINE, Ljava/util/logging/Level; >
+00031B|          PUSH           [57089FBC]                 | FF35BC9F0857
+[161] aastore
+000321|          MOV                  EAX           8[ESP] | 8B442408
+000325|          MOV                  EDX           4[ESP] | 8B542404
+000329|          CALL           [57081328]                 | FF1528130857
+[162] dup
+00032F|          PUSH                [ESP]                 | FF3424
+[163] iconst_4
+000332|          PUSH                   4                  | 6A04
+[164] getstatic < BootstrapCL, Ljava/util/logging/Level;, CONFIG, Ljava/util/logging/Level; >
+000334|          PUSH           [57089FB8]                 | FF35B89F0857
+[167] aastore
+00033A|          MOV                  EAX           8[ESP] | 8B442408
+00033E|          MOV                  EDX           4[ESP] | 8B542404
+000342|          CALL           [57081328]                 | FF1528130857
+[168] dup
+000348|          PUSH                [ESP]                 | FF3424
+[169] iconst_5
+00034B|          PUSH                   5                  | 6A05
+[170] getstatic < BootstrapCL, Ljava/util/logging/Level;, INFO, Ljava/util/logging/Level; >
+00034D|          PUSH           [57089FB4]                 | FF35B49F0857
+[173] aastore
+000353|          MOV                  EAX           8[ESP] | 8B442408
+000357|          MOV                  EDX           4[ESP] | 8B542404
+00035B|          CALL           [57081328]                 | FF1528130857
+[174] dup
+000361|          PUSH                [ESP]                 | FF3424
+[175] bipush 6
+000364|          PUSH                   6                  | 6A06
+[177] getstatic < BootstrapCL, Ljava/util/logging/Level;, WARNING, Ljava/util/logging/Level; >
+000366|          PUSH           [57089FB0]                 | FF35B09F0857
+[180] aastore
+00036C|          MOV                  EAX           8[ESP] | 8B442408
+000370|          MOV                  EDX           4[ESP] | 8B542404
+000374|          CALL           [57081328]                 | FF1528130857
+[181] dup
+00037A|          PUSH                [ESP]                 | FF3424
+[182] bipush 7
+00037D|          PUSH                   7                  | 6A07
+[184] getstatic < BootstrapCL, Ljava/util/logging/Level;, SEVERE, Ljava/util/logging/Level; >
+00037F|          PUSH           [57089FAC]                 | FF35AC9F0857
+[187] aastore
+000385|          MOV                  EAX           8[ESP] | 8B442408
+000389|          MOV                  EDX           4[ESP] | 8B542404
+00038D|          CALL           [57081328]                 | FF1528130857
+[188] dup
+000393|          PUSH                [ESP]                 | FF3424
+[189] bipush 8
+000396|          PUSH                   8                  | 6A08
+[191] getstatic < BootstrapCL, Ljava/util/logging/Level;, OFF, Ljava/util/logging/Level; >
+000398|          PUSH           [57089FA8]                 | FF35A89F0857
+[194] aastore
+00039E|          MOV                  EAX           8[ESP] | 8B442408
+0003A2|          MOV                  EDX           4[ESP] | 8B542404
+0003A6|          CALL           [57081328]                 | FF1528130857
+[195] putstatic < BootstrapCL, Ljava/util/logging/Level;, knownLevels, [Ljava/util/logging/Level; >
+0003AC|          POP            [57089FCC]                 | 8F05CC9F0857
+[198] return
+0003B2| start of epilogue
+0003B2| From genEpilogue 3.SpaceToRelease is0
+0003B2|          POP                  EBX                  | 5B
+0003B3|          POP                  EDI                  | 5F
+0003B4| adjustStack by 1
+0003B4|          POP                  ECX                  | 59
+0003B5|          POP              236[ESI]                 | 8F86EC000000
+0003BB|          RET                                       | C3
+0003BC| End of epilogue
+baseline End: Final machine code for method java.util.logging.Level <clinit> ()V
+baseline Start: Final machine code for method gnu.java.nio.charset.EncodingHelper <clinit> ()V
+000000| prologue for < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13802                  | 68EA350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002D|          PUSH                  40                  | 6A28
+00002F|          PUSH           [570862C8]                 | FF35C8620857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3954                  | 68720F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000054|          MOV                  EAX            [ESP] | 8B0424
+000057|          CALL           [57089754]                 | FF1554970857
+[7] putstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00005D|          POP            [5708AF74]                 | 8F0574AF0857
+[10] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000063|          PUSH           [5708AF74]                 | FF3574AF0857
+[13] ldc 19
+000069|          PUSH           [57087518]                 | FF3518750857
+[15] ldc 21
+00006F|          PUSH           [57087528]                 | FF3528750857
+[17] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000075|          MOV                  EDX           8[ESP] | 8B542408
+000079|          MOV                  ECX         -12[EDX] | 8B4AF4
+00007C|          MOV                  EAX           8[ESP] | 8B442408
+000080|          MOV                  EDX           4[ESP] | 8B542404
+000084|          CALL             100[ECX]                 | FF5164
+000087|          PUSH                 EAX                  | 50
+[20] pop
+000088| adjustStack by 1
+000088|          POP                  ECX                  | 59
+[21] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000089|          PUSH           [5708AF74]                 | FF3574AF0857
+[24] ldc 27
+00008F|          PUSH           [5708768C]                 | FF358C760857
+[26] ldc 29
+000095|          PUSH           [570885F8]                 | FF35F8850857
+[28] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00009B|          MOV                  EDX           8[ESP] | 8B542408
+00009F|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000A2|          MOV                  EAX           8[ESP] | 8B442408
+0000A6|          MOV                  EDX           4[ESP] | 8B542404
+0000AA|          CALL             100[ECX]                 | FF5164
+0000AD|          PUSH                 EAX                  | 50
+[31] pop
+0000AE| adjustStack by 1
+0000AE|          POP                  ECX                  | 59
+[32] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000AF|          PUSH           [5708AF74]                 | FF3574AF0857
+[35] ldc 31
+0000B5|          PUSH           [570876B4]                 | FF35B4760857
+[37] ldc 33
+0000BB|          PUSH           [570885FC]                 | FF35FC850857
+[39] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0000C1|          MOV                  EDX           8[ESP] | 8B542408
+0000C5|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000C8|          MOV                  EAX           8[ESP] | 8B442408
+0000CC|          MOV                  EDX           4[ESP] | 8B542404
+0000D0|          CALL             100[ECX]                 | FF5164
+0000D3|          PUSH                 EAX                  | 50
+[42] pop
+0000D4| adjustStack by 1
+0000D4|          POP                  ECX                  | 59
+[43] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000D5|          PUSH           [5708AF74]                 | FF3574AF0857
+[46] ldc 35
+0000DB|          PUSH           [570876D4]                 | FF35D4760857
+[48] ldc 37
+0000E1|          PUSH           [57088600]                 | FF3500860857
+[50] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0000E7|          MOV                  EDX           8[ESP] | 8B542408
+0000EB|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000EE|          MOV                  EAX           8[ESP] | 8B442408
+0000F2|          MOV                  EDX           4[ESP] | 8B542404
+0000F6|          CALL             100[ECX]                 | FF5164
+0000F9|          PUSH                 EAX                  | 50
+[53] pop
+0000FA| adjustStack by 1
+0000FA|          POP                  ECX                  | 59
+[54] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000FB|          PUSH           [5708AF74]                 | FF3574AF0857
+[57] ldc 39
+000101|          PUSH           [570876F0]                 | FF35F0760857
+[59] ldc 41
+000107|          PUSH           [57088604]                 | FF3504860857
+[61] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00010D|          MOV                  EDX           8[ESP] | 8B542408
+000111|          MOV                  ECX         -12[EDX] | 8B4AF4
+000114|          MOV                  EAX           8[ESP] | 8B442408
+000118|          MOV                  EDX           4[ESP] | 8B542404
+00011C|          CALL             100[ECX]                 | FF5164
+00011F|          PUSH                 EAX                  | 50
+[64] pop
+000120| adjustStack by 1
+000120|          POP                  ECX                  | 59
+[65] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000121|          PUSH           [5708AF74]                 | FF3574AF0857
+[68] ldc 43
+000127|          PUSH           [57087710]                 | FF3510770857
+[70] ldc 45
+00012D|          PUSH           [57088608]                 | FF3508860857
+[72] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000133|          MOV                  EDX           8[ESP] | 8B542408
+000137|          MOV                  ECX         -12[EDX] | 8B4AF4
+00013A|          MOV                  EAX           8[ESP] | 8B442408
+00013E|          MOV                  EDX           4[ESP] | 8B542404
+000142|          CALL             100[ECX]                 | FF5164
+000145|          PUSH                 EAX                  | 50
+[75] pop
+000146| adjustStack by 1
+000146|          POP                  ECX                  | 59
+[76] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000147|          PUSH           [5708AF74]                 | FF3574AF0857
+[79] ldc 47
+00014D|          PUSH           [57087730]                 | FF3530770857
+[81] ldc 49
+000153|          PUSH           [5708860C]                 | FF350C860857
+[83] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000159|          MOV                  EDX           8[ESP] | 8B542408
+00015D|          MOV                  ECX         -12[EDX] | 8B4AF4
+000160|          MOV                  EAX           8[ESP] | 8B442408
+000164|          MOV                  EDX           4[ESP] | 8B542404
+000168|          CALL             100[ECX]                 | FF5164
+00016B|          PUSH                 EAX                  | 50
+[86] pop
+00016C| adjustStack by 1
+00016C|          POP                  ECX                  | 59
+[87] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00016D|          PUSH           [5708AF74]                 | FF3574AF0857
+[90] ldc 51
+000173|          PUSH           [57086BA8]                 | FF35A86B0857
+[92] ldc 53
+000179|          PUSH           [57087594]                 | FF3594750857
+[94] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00017F|          MOV                  EDX           8[ESP] | 8B542408
+000183|          MOV                  ECX         -12[EDX] | 8B4AF4
+000186|          MOV                  EAX           8[ESP] | 8B442408
+00018A|          MOV                  EDX           4[ESP] | 8B542404
+00018E|          CALL             100[ECX]                 | FF5164
+000191|          PUSH                 EAX                  | 50
+[97] pop
+000192| adjustStack by 1
+000192|          POP                  ECX                  | 59
+[98] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000193|          PUSH           [5708AF74]                 | FF3574AF0857
+[101] ldc 55
+000199|          PUSH           [57087750]                 | FF3550770857
+[103] ldc 57
+00019F|          PUSH           [57087754]                 | FF3554770857
+[105] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001A5|          MOV                  EDX           8[ESP] | 8B542408
+0001A9|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001AC|          MOV                  EAX           8[ESP] | 8B442408
+0001B0|          MOV                  EDX           4[ESP] | 8B542404
+0001B4|          CALL             100[ECX]                 | FF5164
+0001B7|          PUSH                 EAX                  | 50
+[108] pop
+0001B8| adjustStack by 1
+0001B8|          POP                  ECX                  | 59
+[109] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0001B9|          PUSH           [5708AF74]                 | FF3574AF0857
+[112] ldc 59
+0001BF|          PUSH           [57087794]                 | FF3594770857
+[114] ldc 61
+0001C5|          PUSH           [57087798]                 | FF3598770857
+[116] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001CB|          MOV                  EDX           8[ESP] | 8B542408
+0001CF|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001D2|          MOV                  EAX           8[ESP] | 8B442408
+0001D6|          MOV                  EDX           4[ESP] | 8B542404
+0001DA|          CALL             100[ECX]                 | FF5164
+0001DD|          PUSH                 EAX                  | 50
+[119] pop
+0001DE| adjustStack by 1
+0001DE|          POP                  ECX                  | 59
+[120] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0001DF|          PUSH           [5708AF74]                 | FF3574AF0857
+[123] ldc 63
+0001E5|          PUSH           [570877D8]                 | FF35D8770857
+[125] ldc 65
+0001EB|          PUSH           [570877DC]                 | FF35DC770857
+[127] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001F1|          MOV                  EDX           8[ESP] | 8B542408
+0001F5|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001F8|          MOV                  EAX           8[ESP] | 8B442408
+0001FC|          MOV                  EDX           4[ESP] | 8B542404
+000200|          CALL             100[ECX]                 | FF5164
+000203|          PUSH                 EAX                  | 50
+[130] pop
+000204| adjustStack by 1
+000204|          POP                  ECX                  | 59
+[131] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000205|          PUSH           [5708AF74]                 | FF3574AF0857
+[134] ldc 67
+00020B|          PUSH           [57087818]                 | FF3518780857
+[136] ldc 69
+000211|          PUSH           [5708781C]                 | FF351C780857
+[138] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000217|          MOV                  EDX           8[ESP] | 8B542408
+00021B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00021E|          MOV                  EAX           8[ESP] | 8B442408
+000222|          MOV                  EDX           4[ESP] | 8B542404
+000226|          CALL             100[ECX]                 | FF5164
+000229|          PUSH                 EAX                  | 50
+[141] pop
+00022A| adjustStack by 1
+00022A|          POP                  ECX                  | 59
+[142] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00022B|          PUSH           [5708AF74]                 | FF3574AF0857
+[145] ldc 71
+000231|          PUSH           [57087864]                 | FF3564780857
+[147] ldc 73
+000237|          PUSH           [57087868]                 | FF3568780857
+[149] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00023D|          MOV                  EDX           8[ESP] | 8B542408
+000241|          MOV                  ECX         -12[EDX] | 8B4AF4
+000244|          MOV                  EAX           8[ESP] | 8B442408
+000248|          MOV                  EDX           4[ESP] | 8B542404
+00024C|          CALL             100[ECX]                 | FF5164
+00024F|          PUSH                 EAX                  | 50
+[152] pop
+000250| adjustStack by 1
+000250|          POP                  ECX                  | 59
+[153] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000251|          PUSH           [5708AF74]                 | FF3574AF0857
+[156] ldc 75
+000257|          PUSH           [570878AC]                 | FF35AC780857
+[158] ldc 77
+00025D|          PUSH           [570878B0]                 | FF35B0780857
+[160] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000263|          MOV                  EDX           8[ESP] | 8B542408
+000267|          MOV                  ECX         -12[EDX] | 8B4AF4
+00026A|          MOV                  EAX           8[ESP] | 8B442408
+00026E|          MOV                  EDX           4[ESP] | 8B542404
+000272|          CALL             100[ECX]                 | FF5164
+000275|          PUSH                 EAX                  | 50
+[163] pop
+000276| adjustStack by 1
+000276|          POP                  ECX                  | 59
+[164] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000277|          PUSH           [5708AF74]                 | FF3574AF0857
+[167] ldc 79
+00027D|          PUSH           [570878D8]                 | FF35D8780857
+[169] ldc 81
+000283|          PUSH           [57088610]                 | FF3510860857
+[171] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000289|          MOV                  EDX           8[ESP] | 8B542408
+00028D|          MOV                  ECX         -12[EDX] | 8B4AF4
+000290|          MOV                  EAX           8[ESP] | 8B442408
+000294|          MOV                  EDX           4[ESP] | 8B542404
+000298|          CALL             100[ECX]                 | FF5164
+00029B|          PUSH                 EAX                  | 50
+[174] pop
+00029C| adjustStack by 1
+00029C|          POP                  ECX                  | 59
+[175] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00029D|          PUSH           [5708AF74]                 | FF3574AF0857
+[178] ldc 83
+0002A3|          PUSH           [57087924]                 | FF3524790857
+[180] ldc 85
+0002A9|          PUSH           [57087928]                 | FF3528790857
+[182] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002AF|          MOV                  EDX           8[ESP] | 8B542408
+0002B3|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002B6|          MOV                  EAX           8[ESP] | 8B442408
+0002BA|          MOV                  EDX           4[ESP] | 8B542404
+0002BE|          CALL             100[ECX]                 | FF5164
+0002C1|          PUSH                 EAX                  | 50
+[185] pop
+0002C2| adjustStack by 1
+0002C2|          POP                  ECX                  | 59
+[186] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0002C3|          PUSH           [5708AF74]                 | FF3574AF0857
+[189] ldc 87
+0002C9|          PUSH           [57086BD0]                 | FF35D06B0857
+[191] ldc 89
+0002CF|          PUSH           [570875E8]                 | FF35E8750857
+[193] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002D5|          MOV                  EDX           8[ESP] | 8B542408
+0002D9|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002DC|          MOV                  EAX           8[ESP] | 8B442408
+0002E0|          MOV                  EDX           4[ESP] | 8B542404
+0002E4|          CALL             100[ECX]                 | FF5164
+0002E7|          PUSH                 EAX                  | 50
+[196] pop
+0002E8| adjustStack by 1
+0002E8|          POP                  ECX                  | 59
+[197] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0002E9|          PUSH           [5708AF74]                 | FF3574AF0857
+[200] ldc 91
+0002EF|          PUSH           [57087600]                 | FF3500760857
+[202] ldc 93
+0002F5|          PUSH           [57087630]                 | FF3530760857
+[204] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002FB|          MOV                  EDX           8[ESP] | 8B542408
+0002FF|          MOV                  ECX         -12[EDX] | 8B4AF4
+000302|          MOV                  EAX           8[ESP] | 8B442408
+000306|          MOV                  EDX           4[ESP] | 8B542404
+00030A|          CALL             100[ECX]                 | FF5164
+00030D|          PUSH                 EAX                  | 50
+[207] pop
+00030E| adjustStack by 1
+00030E|          POP                  ECX                  | 59
+[208] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00030F|          PUSH           [5708AF74]                 | FF3574AF0857
+[211] ldc 95
+000315|          PUSH           [57087640]                 | FF3540760857
+[213] ldc 97
+00031B|          PUSH           [5708765C]                 | FF355C760857
+[215] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000321|          MOV                  EDX           8[ESP] | 8B542408
+000325|          MOV                  ECX         -12[EDX] | 8B4AF4
+000328|          MOV                  EAX           8[ESP] | 8B442408
+00032C|          MOV                  EDX           4[ESP] | 8B542404
+000330|          CALL             100[ECX]                 | FF5164
+000333|          PUSH                 EAX                  | 50
+[218] pop
+000334| adjustStack by 1
+000334|          POP                  ECX                  | 59
+[219] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000335|          PUSH           [5708AF74]                 | FF3574AF0857
+[222] ldc 99
+00033B|          PUSH           [57088614]                 | FF3514860857
+[224] ldc 101
+000341|          PUSH           [57088618]                 | FF3518860857
+[226] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000347|          MOV                  EDX           8[ESP] | 8B542408
+00034B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00034E|          MOV                  EAX           8[ESP] | 8B442408
+000352|          MOV                  EDX           4[ESP] | 8B542404
+000356|          CALL             100[ECX]                 | FF5164
+000359|          PUSH                 EAX                  | 50
+[229] pop
+00035A| adjustStack by 1
+00035A|          POP                  ECX                  | 59
+[230] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00035B|          PUSH           [5708AF74]                 | FF3574AF0857
+[233] ldc 103
+000361|          PUSH           [5708861C]                 | FF351C860857
+[235] ldc 105
+000367|          PUSH           [57088620]                 | FF3520860857
+[237] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00036D|          MOV                  EDX           8[ESP] | 8B542408
+000371|          MOV                  ECX         -12[EDX] | 8B4AF4
+000374|          MOV                  EAX           8[ESP] | 8B442408
+000378|          MOV                  EDX           4[ESP] | 8B542404
+00037C|          CALL             100[ECX]                 | FF5164
+00037F|          PUSH                 EAX                  | 50
+[240] pop
+000380| adjustStack by 1
+000380|          POP                  ECX                  | 59
+[241] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000381|          PUSH           [5708AF74]                 | FF3574AF0857
+[244] ldc 107
+000387|          PUSH           [57088624]                 | FF3524860857
+[246] ldc 109
+00038D|          PUSH           [57088628]                 | FF3528860857
+[248] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000393|          MOV                  EDX           8[ESP] | 8B542408
+000397|          MOV                  ECX         -12[EDX] | 8B4AF4
+00039A|          MOV                  EAX           8[ESP] | 8B442408
+00039E|          MOV                  EDX           4[ESP] | 8B542404
+0003A2|          CALL             100[ECX]                 | FF5164
+0003A5|          PUSH                 EAX                  | 50
+[251] pop
+0003A6| adjustStack by 1
+0003A6|          POP                  ECX                  | 59
+[252] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003A7|          PUSH           [5708AF74]                 | FF3574AF0857
+[255] ldc 111
+0003AD|          PUSH           [5708862C]                 | FF352C860857
+[257] ldc 113
+0003B3|          PUSH           [57088630]                 | FF3530860857
+[259] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0003B9|          MOV                  EDX           8[ESP] | 8B542408
+0003BD|          MOV                  ECX         -12[EDX] | 8B4AF4
+0003C0|          MOV                  EAX           8[ESP] | 8B442408
+0003C4|          MOV                  EDX           4[ESP] | 8B542404
+0003C8|          CALL             100[ECX]                 | FF5164
+0003CB|          PUSH                 EAX                  | 50
+[262] pop
+0003CC| adjustStack by 1
+0003CC|          POP                  ECX                  | 59
+[263] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003CD|          PUSH           [5708AF74]                 | FF3574AF0857
+[266] ldc 115
+0003D3|          PUSH           [57088634]                 | FF3534860857
+[268] ldc 117
+0003D9|          PUSH           [57088638]                 | FF3538860857
+[270] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0003DF|          MOV                  EDX           8[ESP] | 8B542408
+0003E3|          MOV                  ECX         -12[EDX] | 8B4AF4
+0003E6|          MOV                  EAX           8[ESP] | 8B442408
+0003EA|          MOV                  EDX           4[ESP] | 8B542404
+0003EE|          CALL             100[ECX]                 | FF5164
+0003F1|          PUSH                 EAX                  | 50
+[273] pop
+0003F2| adjustStack by 1
+0003F2|          POP                  ECX                  | 59
+[274] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003F3|          PUSH           [5708AF74]                 | FF3574AF0857
+[277] ldc 119
+0003F9|          PUSH           [5708863C]                 | FF353C860857
+[279] ldc 121
+0003FF|          PUSH           [57088640]                 | FF3540860857
+[281] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000405|          MOV                  EDX           8[ESP] | 8B542408
+000409|          MOV                  ECX         -12[EDX] | 8B4AF4
+00040C|          MOV                  EAX           8[ESP] | 8B442408
+000410|          MOV                  EDX           4[ESP] | 8B542404
+000414|          CALL             100[ECX]                 | FF5164
+000417|          PUSH                 EAX                  | 50
+[284] pop
+000418| adjustStack by 1
+000418|          POP                  ECX                  | 59
+[285] return
+000419| start of epilogue
+000419| From genEpilogue 3.SpaceToRelease is0
+000419|          POP                  EBX                  | 5B
+00041A|          POP                  EDI                  | 5F
+00041B| adjustStack by 1
+00041B|          POP                  ECX                  | 59
+00041C|          POP              236[ESI]                 | 8F86EC000000
+000422|          RET                                       | C3
+000423| End of epilogue
+baseline End: Final machine code for method gnu.java.nio.charset.EncodingHelper <clinit> ()V
+baseline Start: Final machine code for method java.lang.reflect.Proxy <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/lang/reflect/Proxy; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13803                  | 68EB350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002D|          PUSH                  40                  | 6A28
+00002F|          PUSH           [570862C8]                 | FF35C8620857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3955                  | 68730F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000054|          MOV                  EAX            [ESP] | 8B0424
+000057|          CALL           [57089754]                 | FF1554970857
+[7] putstatic < BootstrapCL, Ljava/lang/reflect/Proxy;, proxyClasses, Ljava/util/Map; >
+00005D|          POP            [5708D01C]                 | 8F051CD00857
+[10] return
+000063| start of epilogue
+000063| From genEpilogue 3.SpaceToRelease is0
+000063|          POP                  EBX                  | 5B
+000064|          POP                  EDI                  | 5F
+000065| adjustStack by 1
+000065|          POP                  ECX                  | 59
+000066|          POP              236[ESI]                 | 8F86EC000000
+00006C|          RET                                       | C3
+00006D| End of epilogue
+baseline End: Final machine code for method java.lang.reflect.Proxy <clinit> ()V
+baseline Start: Final machine code for method java.lang.reflect.Proxy$ProxySignature <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13804                  | 68EC350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=1. ParameterWords=0
+000013| EmptySatckOffset argument is 4
+000013| adjustStack by -1
+000013|          PUSH                 EAX                  | 50
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002E|          PUSH                  40                  | 6A28
+000030|          PUSH           [570862C8]                 | FF35C8620857
+000036|          PUSH                   0                  | 6A00
+000038|          PUSH                   0                  | 6A00
+00003A|          PUSH                   4                  | 6A04
+00003C|          PUSH                   8                  | 6A08
+00003E|          PUSH                3956                  | 68740F0000
+000043|          MOV                  EAX          24[ESP] | 8B442418
+000047|          MOV                  EDX          20[ESP] | 8B542414
+00004B|          CALL           [57081340]                 | FF1540130857
+000051|          PUSH                 EAX                  | 50
+[3] dup
+000052|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000055|          MOV                  EAX            [ESP] | 8B0424
+000058|          CALL           [57089754]                 | FF1554970857
+[7] putstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00005E|          POP            [5708DC5C]                 | 8F055CDC0857
+[10] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+000064|          PUSH                  16                  | 6A10
+000066|          PUSH           [57086410]                 | FF3510640857
+00006C|          PUSH                   0                  | 6A00
+00006E|          PUSH                   0                  | 6A00
+000070|          PUSH                   4                  | 6A04
+000072|          PUSH                   8                  | 6A08
+000074|          PUSH                3957                  | 68750F0000
+000079|          MOV                  EAX          24[ESP] | 8B442418
+00007D|          MOV                  EDX          20[ESP] | 8B542414
+000081|          CALL           [57081340]                 | FF1540130857
+000087|          PUSH                 EAX                  | 50
+[13] dup
+000088|          PUSH                [ESP]                 | FF3424
+[14] ldc 3
+00008B|          PUSH           [5708E4C0]                 | FF35C0E40857
+[16] ldc 21
+000091|          PUSH           [57083848]                 | FF3548380857
+[18] iconst_1
+000097|          PUSH                   1                  | 6A01
+[19] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+000099|          PUSH                   2                  | 6A02
+00009B|          PUSH                  12                  | 6A0C
+00009D|          PUSH           [57088314]                 | FF3514830857
+0000A3|          PUSH                   0                  | 6A00
+0000A5|          PUSH                   4                  | 6A04
+0000A7|          PUSH                  12                  | 6A0C
+0000A9|          PUSH                3958                  | 68760F0000
+0000AE|          MOV                  EAX          28[ESP] | 8B44241C
+0000B2|          MOV                  EDX          24[ESP] | 8B542418
+0000B6|          CALL           [57081350]                 | FF1550130857
+0000BC|          PUSH                 EAX                  | 50
+[22] dup
+0000BD|          PUSH                [ESP]                 | FF3424
+[23] iconst_0
+0000C0|          PUSH                   0                  | 6A00
+[24] ldc 3
+0000C2|          PUSH           [5708E4C0]                 | FF35C0E40857
+[26] aastore
+0000C8|          MOV                  EAX           8[ESP] | 8B442408
+0000CC|          MOV                  EDX           4[ESP] | 8B542404
+0000D0|          CALL           [57081328]                 | FF1528130857
+[27] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+0000D6|          MOV                  EDX           8[ESP] | 8B542408
+0000DA|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000DD|          MOV                  EAX           8[ESP] | 8B442408
+0000E1|          MOV                  EDX           4[ESP] | 8B542404
+0000E5|          CALL             304[ECX]                 | FF9130010000
+0000EB|          PUSH                 EAX                  | 50
+[30] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+0000EC|          MOV                  EAX           4[ESP] | 8B442404
+0000F0|          MOV                  EDX            [ESP] | 8B1424
+0000F3|          CALL           [5708DC60]                 | FF1560DC0857
+[33] astore_0
+0000F9|          POP                 [ESP]                 | 8F0424
+[34] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+0000FC|          PUSH           [5708DC5C]                 | FF355CDC0857
+[37] aload_0
+000102|          PUSH               4[ESP]                 | FF742404
+[38] aload_0
+000106|          PUSH               8[ESP]                 | FF742408
+[39] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00010A|          MOV                  EDX           8[ESP] | 8B542408
+00010E|          MOV                  ECX         -12[EDX] | 8B4AF4
+000111|          MOV                  EAX           8[ESP] | 8B442408
+000115|          MOV                  EDX           4[ESP] | 8B542404
+000119|          CALL             100[ECX]                 | FF5164
+00011C|          PUSH                 EAX                  | 50
+[42] pop
+00011D| adjustStack by 1
+00011D|          POP                  ECX                  | 59
+[43] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+00011E|          PUSH                  16                  | 6A10
+000120|          PUSH           [57086410]                 | FF3510640857
+000126|          PUSH                   0                  | 6A00
+000128|          PUSH                   0                  | 6A00
+00012A|          PUSH                   4                  | 6A04
+00012C|          PUSH                   8                  | 6A08
+00012E|          PUSH                3959                  | 68770F0000
+000133|          MOV                  EAX          24[ESP] | 8B442418
+000137|          MOV                  EDX          20[ESP] | 8B542414
+00013B|          CALL           [57081340]                 | FF1540130857
+000141|          PUSH                 EAX                  | 50
+[46] dup
+000142|          PUSH                [ESP]                 | FF3424
+[47] ldc 3
+000145|          PUSH           [5708E4C0]                 | FF35C0E40857
+[49] ldc 36
+00014B|          PUSH           [57083844]                 | FF3544380857
+[51] iconst_0
+000151|          PUSH                   0                  | 6A00
+[52] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+000153|          PUSH                   2                  | 6A02
+000155|          PUSH                  12                  | 6A0C
+000157|          PUSH           [57088314]                 | FF3514830857
+00015D|          PUSH                   0                  | 6A00
+00015F|          PUSH                   4                  | 6A04
+000161|          PUSH                  12                  | 6A0C
+000163|          PUSH                3960                  | 68780F0000
+000168|          MOV                  EAX          28[ESP] | 8B44241C
+00016C|          MOV                  EDX          24[ESP] | 8B542418
+000170|          CALL           [57081350]                 | FF1550130857
+000176|          PUSH                 EAX                  | 50
+[55] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+000177|          MOV                  EDX           8[ESP] | 8B542408
+00017B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00017E|          MOV                  EAX           8[ESP] | 8B442408
+000182|          MOV                  EDX           4[ESP] | 8B542404
+000186|          CALL             304[ECX]                 | FF9130010000
+00018C|          PUSH                 EAX                  | 50
+[58] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+00018D|          MOV                  EAX           4[ESP] | 8B442404
+000191|          MOV                  EDX            [ESP] | 8B1424
+000194|          CALL           [5708DC60]                 | FF1560DC0857
+[61] astore_0
+00019A|          POP                 [ESP]                 | 8F0424
+[62] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00019D|          PUSH           [5708DC5C]                 | FF355CDC0857
+[65] aload_0
+0001A3|          PUSH               4[ESP]                 | FF742404
+[66] aload_0
+0001A7|          PUSH               8[ESP]                 | FF742408
+[67] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001AB|          MOV                  EDX           8[ESP] | 8B542408
+0001AF|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001B2|          MOV                  EAX           8[ESP] | 8B442408
+0001B6|          MOV                  EDX           4[ESP] | 8B542404
+0001BA|          CALL             100[ECX]                 | FF5164
+0001BD|          PUSH                 EAX                  | 50
+[70] pop
+0001BE| adjustStack by 1
+0001BE|          POP                  ECX                  | 59
+[71] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+0001BF|          PUSH                  16                  | 6A10
+0001C1|          PUSH           [57086410]                 | FF3510640857
+0001C7|          PUSH                   0                  | 6A00
+0001C9|          PUSH                   0                  | 6A00
+0001CB|          PUSH                   4                  | 6A04
+0001CD|          PUSH                   8                  | 6A08
+0001CF|          PUSH                3961                  | 68790F0000
+0001D4|          MOV                  EAX          24[ESP] | 8B442418
+0001D8|          MOV                  EDX          20[ESP] | 8B542414
+0001DC|          CALL           [57081340]                 | FF1540130857
+0001E2|          PUSH                 EAX                  | 50
+[74] dup
+0001E3|          PUSH                [ESP]                 | FF3424
+[75] ldc 3
+0001E6|          PUSH           [5708E4C0]                 | FF35C0E40857
+[77] ldc 38
+0001EC|          PUSH           [5708384C]                 | FF354C380857
+[79] iconst_0
+0001F2|          PUSH                   0                  | 6A00
+[80] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+0001F4|          PUSH                   2                  | 6A02
+0001F6|          PUSH                  12                  | 6A0C
+0001F8|          PUSH           [57088314]                 | FF3514830857
+0001FE|          PUSH                   0                  | 6A00
+000200|          PUSH                   4                  | 6A04
+000202|          PUSH                  12                  | 6A0C
+000204|          PUSH                3962                  | 687A0F0000
+000209|          MOV                  EAX          28[ESP] | 8B44241C
+00020D|          MOV                  EDX          24[ESP] | 8B542418
+000211|          CALL           [57081350]                 | FF1550130857
+000217|          PUSH                 EAX                  | 50
+[83] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+000218|          MOV                  EDX           8[ESP] | 8B542408
+00021C|          MOV                  ECX         -12[EDX] | 8B4AF4
+00021F|          MOV                  EAX           8[ESP] | 8B442408
+000223|          MOV                  EDX           4[ESP] | 8B542404
+000227|          CALL             304[ECX]                 | FF9130010000
+00022D|          PUSH                 EAX                  | 50
+[86] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+00022E|          MOV                  EAX           4[ESP] | 8B442404
+000232|          MOV                  EDX            [ESP] | 8B1424
+000235|          CALL           [5708DC60]                 | FF1560DC0857
+[89] astore_0
+00023B|          POP                 [ESP]                 | 8F0424
+[90] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00023E|          PUSH           [5708DC5C]                 | FF355CDC0857
+[93] aload_0
+000244|          PUSH               4[ESP]                 | FF742404
+[94] aload_0
+000248|          PUSH               8[ESP]                 | FF742408
+[95] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00024C|          MOV                  EDX           8[ESP] | 8B542408
+000250|          MOV                  ECX         -12[EDX] | 8B4AF4
+000253|          MOV                  EAX           8[ESP] | 8B442408
+000257|          MOV                  EDX           4[ESP] | 8B542404
+00025B|          CALL             100[ECX]                 | FF5164
+00025E|          PUSH                 EAX                  | 50
+[98] pop
+00025F| adjustStack by 1
+00025F|          POP                  ECX                  | 59
+[99] goto 35 [134] 
+000260|          JMP                  134                  | E900000000
+[102] astore_0
+000265|          POP                 [ESP]                 | 8F0424
+[103] new < BootstrapCL, Ljava/lang/InternalError; >
+000268|          PUSH                  24                  | 6A18
+00026A|          PUSH           [570864A4]                 | FF35A4640857
+000270|          PUSH                   0                  | 6A00
+000272|          PUSH                   0                  | 6A00
+000274|          PUSH                   4                  | 6A04
+000276|          PUSH                   8                  | 6A08
+000278|          PUSH                3963                  | 687B0F0000
+00027D|          MOV                  EAX          24[ESP] | 8B442418
+000281|          MOV                  EDX          20[ESP] | 8B542414
+000285|          CALL           [57081340]                 | FF1540130857
+00028B|          PUSH                 EAX                  | 50
+[106] dup
+00028C|          PUSH                [ESP]                 | FF3424
+[107] new < BootstrapCL, Ljava/lang/StringBuilder; >
+00028F|          PUSH                  16                  | 6A10
+000291|          PUSH           [57087CC4]                 | FF35C47C0857
+000297|          PUSH                   0                  | 6A00
+000299|          PUSH                   0                  | 6A00
+00029B|          PUSH                   4                  | 6A04
+00029D|          PUSH                   8                  | 6A08
+00029F|          PUSH                3964                  | 687C0F0000
+0002A4|          MOV                  EAX          24[ESP] | 8B442418
+0002A8|          MOV                  EDX          20[ESP] | 8B542414
+0002AC|          CALL           [57081340]                 | FF1540130857
+0002B2|          PUSH                 EAX                  | 50
+[110] dup
+0002B3|          PUSH                [ESP]                 | FF3424
+[111] ldc 44
+0002B6|          PUSH           [57081714]                 | FF3514170857
+[113] invokespecial < BootstrapCL, Ljava/lang/StringBuilder;, <init>, (Ljava/lang/String;)V >
+0002BC|          MOV                  EAX           4[ESP] | 8B442404
+0002C0|          MOV                  EDX            [ESP] | 8B1424
+0002C3|          CALL           [5708CD68]                 | FF1568CD0857
+[116] aload_0
+0002C9|          PUSH              12[ESP]                 | FF74240C
+[117] invokevirtual < BootstrapCL, Ljava/lang/StringBuilder;, append, (Ljava/lang/Object;)Ljava/lang/StringBuilder; >
+0002CD|          MOV                  EDX           4[ESP] | 8B542404
+0002D1|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002D4|          MOV                  EAX           4[ESP] | 8B442404
+0002D8|          MOV                  EDX            [ESP] | 8B1424
+0002DB|          CALL             100[ECX]                 | FF5164
+0002DE|          PUSH                 EAX                  | 50
+[120] invokevirtual < BootstrapCL, Ljava/lang/StringBuilder;, toString, ()Ljava/lang/String; >
+0002DF|          MOV                  EDX            [ESP] | 8B1424
+0002E2|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002E5|          MOV                  EAX            [ESP] | 8B0424
+0002E8|          CALL              56[ECX]                 | FF5138
+0002EB|          PUSH                 EAX                  | 50
+[123] invokespecial < BootstrapCL, Ljava/lang/InternalError;, <init>, (Ljava/lang/String;)V >
+0002EC|          MOV                  EAX           4[ESP] | 8B442404
+0002F0|          MOV                  EDX            [ESP] | 8B1424
+0002F3|          CALL           [5708C048]                 | FF1548C00857
+[126] aload_0
+0002F9|          PUSH               4[ESP]                 | FF742404
+[127] invokevirtual < BootstrapCL, Ljava/lang/InternalError;, initCause, (Ljava/lang/Throwable;)Ljava/lang/Throwable; >
+0002FD|          MOV                  EDX           4[ESP] | 8B542404
+000301|          MOV                  ECX         -12[EDX] | 8B4AF4
+000304|          MOV                  EAX           4[ESP] | 8B442404
+000308|          MOV                  EDX            [ESP] | 8B1424
+00030B|          CALL              84[ECX]                 | FF5154
+00030E|          PUSH                 EAX                  | 50
+[130] checkcast < BootstrapCL, Ljava/lang/Error; >
+00030F|          MOV                  ECX            [ESP] | 8B0C24
+000312|          TEST                 ECX             ECX  | 85C9
+000314|          JEQ                    0                  | 7400
+000316|          MOV                  ECX         -12[ECX] | 8B49F4
+000319|          MOV                  ECX           4[ECX] | 8B4904
+00031C|          MOVZX                ECX           4[ECX] | 0FB74904
+000320|          CMP                  ECX             242  | 81F9F2000000
+000326|   LIKELY JEQ                    0                  | 3E7400
+000329|          INT                   68                  | CD44
+00032B| <<< 000327
+00032B| <<< 000314
+[133] athrow
+00032B|          MOV                  EAX            [ESP] | 8B0424
+00032E|          CALL           [57081378]                 | FF1578130857
+000334| <<< 000260
+[134] return
+000334| start of epilogue
+000334| From genEpilogue 3.SpaceToRelease is4
+000334| adjustStack by 1
+000334|          POP                  ECX                  | 59
+000335|          POP                  EBX                  | 5B
+000336|          POP                  EDI                  | 5F
+000337| adjustStack by 1
+000337|          POP                  ECX                  | 59
+000338|          POP              236[ESI]                 | 8F86EC000000
+00033E|          RET                                       | C3
+00033F| End of epilogue
+Exception Table:
+    trystart   tryend    catch    type
+          64      265      265    java.lang.Exception
+baseline End: Final machine code for method java.lang.reflect.Proxy$ProxySignature <clinit> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect29 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect29; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13805                  | 68ED350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect29 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect22 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect22; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13806                  | 68EE350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect22 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect33 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect33; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13807                  | 68EF350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect33 <init> ()V
+baseline Start: Final machine code for method java.util.logging.Logger <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/util/logging/Logger; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13808                  | 68F0350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/logging/Logger; >
+00002D|          PUSH                  44                  | 6A2C
+00002F|          PUSH           [5708850C]                 | FF350C850857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3965                  | 687D0F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] ldc 30
+000054|          PUSH           [570803A0]                 | FF35A0030857
+[6] aconst_null
+00005A|          PUSH                   0                  | 6A00
+[7] invokespecial < BootstrapCL, Ljava/util/logging/Logger;, <init>, (Ljava/lang/String;Ljava/lang/String;)V >
+00005C|          MOV                  EAX           8[ESP] | 8B442408
+000060|          MOV                  EDX           4[ESP] | 8B542404
+000064|          CALL           [57089EF0]                 | FF15F09E0857
+[10] putstatic < BootstrapCL, Ljava/util/logging/Logger;, root, Ljava/util/logging/Logger; >
+00006A|          POP            [57089EE4]                 | 8F05E49E0857
+[13] iconst_0
+000070|          PUSH                   0                  | 6A00
+[14] anewarray new < BootstrapCL, [Ljava/lang/Object; >
+000072|          PUSH                   2                  | 6A02
+000074|          PUSH                  12                  | 6A0C
+000076|          PUSH           [57080428]                 | FF3528040857
+00007C|          PUSH                   0                  | 6A00
+00007E|          PUSH                   4                  | 6A04
+000080|          PUSH                  12                  | 6A0C
+000082|          PUSH                3966                  | 687E0F0000
+000087|          MOV                  EAX          28[ESP] | 8B44241C
+00008B|          MOV                  EDX          24[ESP] | 8B542418
+00008F|          CALL           [57081350]                 | FF1550130857
+000095|          PUSH                 EAX                  | 50
+[17] putstatic < BootstrapCL, Ljava/util/logging/Logger;, lock, [Ljava/lang/Object; >
+000096|          POP            [57089EEC]                 | 8F05EC9E0857
+[20] new < BootstrapCL, Ljava/util/logging/Logger$1; >
+00009C|          PUSH                   8                  | 6A08
+00009E|          PUSH           [57088514]                 | FF3514850857
+0000A4|          PUSH                   0                  | 6A00
+0000A6|          PUSH                   0                  | 6A00
+0000A8|          PUSH                   4                  | 6A04
+0000AA|          PUSH                   8                  | 6A08
+0000AC|          PUSH                3967                  | 687F0F0000
+0000B1|          MOV                  EAX          24[ESP] | 8B442418
+0000B5|          MOV                  EDX          20[ESP] | 8B542414
+0000B9|          CALL           [57081340]                 | FF1540130857
+0000BF|          PUSH                 EAX                  | 50
+[23] dup
+0000C0|          PUSH                [ESP]                 | FF3424
+[24] invokespecial < BootstrapCL, Ljava/util/logging/Logger$1;, <init>, ()V >
+0000C3|          MOV                  EAX            [ESP] | 8B0424
+0000C6|          CALL           [5708C164]                 | FF1564C10857
+[27] invokestatic < BootstrapCL, Ljava/security/AccessController;, doPrivileged, (Ljava/security/PrivilegedAction;)Ljava/lang/Object; >
+0000CC|          MOV                  EAX            [ESP] | 8B0424
+0000CF|          CALL           [5708A4F0]                 | FF15F0A40857
+0000D5|          PUSH                 EAX                  | 50
+[30] checkcast < BootstrapCL, Ljava/util/logging/Logger; >
+0000D6|          MOV                  ECX            [ESP] | 8B0C24
+0000D9|          TEST                 ECX             ECX  | 85C9
+0000DB|          JEQ                    0                  | 7400
+0000DD|          MOV                  ECX         -12[ECX] | 8B49F4
+0000E0|          MOV                  ECX           4[ECX] | 8B4904
+0000E3|          MOVZX                ECX           2[ECX] | 0FB74902
+0000E7|          CMP                  ECX            1289  | 81F909050000
+0000ED|   LIKELY JEQ                    0                  | 3E7400
+0000F0|          INT                   68                  | CD44
+0000F2| <<< 0000EE
+0000F2| <<< 0000DB
+[33] putstatic < BootstrapCL, Ljava/util/logging/Logger;, global, Ljava/util/logging/Logger; >
+0000F2|          POP            [57089EE8]                 | 8F05E89E0857
+[36] return
+0000F8| start of epilogue
+0000F8| From genEpilogue 3.SpaceToRelease is0
+0000F8|          POP                  EBX                  | 5B
+0000F9|          POP                  EDI                  | 5F
+0000FA| adjustStack by 1
+0000FA|          POP                  ECX                  | 59
+0000FB|          POP              236[ESI]                 | 8F86EC000000
+000101|          RET                                       | C3
+000102| End of epilogue
+baseline End: Final machine code for method java.util.logging.Logger <clinit> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect4704; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13809                  | 68F1350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect4704; >.invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13810                  | 68F2350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 28
+000013|          PUSH                 EAX                  | 50
+000014|          PUSH                 EDX                  | 52
+000015|          PUSH              28[ESP]                 | FF74241C
+000019| Method LocalWords are=3. ParameterWords=3
+000019| EmptySatckOffset argument is 0
+000019|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001F|   LIKELY JLGT                   0                  | 3E7700
+000022|          INT                   67                  | CD43
+000024| <<< 000020
+000024|          CMP              304[ESI]              0  | 83BE3001000000
+00002B|          JEQ                    0                  | 7400
+00002D|          CALL           [57081B10]                 | FF15101B0857
+000033| <<< 00002B
+000033| End of prologue
+[0] aload_1
+000033|          PUSH               4[ESP]                 | FF742404
+[1] aload_2
+000037|          PUSH               4[ESP]                 | FF742404
+[2] sipush 0
+00003B|          PUSH                   0                  | 6A00
+[5] aaload
+00003D|          POP                  EAX                  | 58
+00003E|          POP                  EDX                  | 5A
+00003F|          CMP               -4[EDX]            EAX  | 3942FC
+000042|   LIKELY JLGT                   0                  | 3E7700
+000045|          MOV              244[ESI]            EAX  | 8986F4000000
+00004B|          INT                   65                  | CD41
+00004D| <<< 000043
+00004D|          PUSH       [0+EDX+EAX<<2]                 | FF3482
+[6] checkcast < BootstrapCL, Ljava/lang/String; >
+000050|          MOV                  ECX            [ESP] | 8B0C24
+000053|          TEST                 ECX             ECX  | 85C9
+000055|          JEQ                    0                  | 7400
+000057|          MOV                  ECX         -12[ECX] | 8B49F4
+00005A|          CMP                  ECX       [57080708] | 3B0D08070857
+000060|   LIKELY JEQ                    0                  | 3E7400
+000063|          INT                   68                  | CD44
+000065| <<< 000061
+000065| <<< 000055
+[9] invokespecial < BootstrapCL, Ljava/io/IOException;, <init>, (Ljava/lang/String;)V >
+000065|          MOV                  EAX           4[ESP] | 8B442404
+000069|          MOV                  EDX            [ESP] | 8B1424
+00006C|          CALL           [5708886C]                 | FF156C880857
+[12] aconst_null
+000072|          PUSH                   0                  | 6A00
+[13] nop
+[14] nop
+[15] areturn
+000074|          POP                  EAX                  | 58
+000075| start of epilogue
+000075| From genEpilogue 3.SpaceToRelease is12
+000075| Adjust stack . Adding to the sp. Sp= Sp+12
+000075|          ADD                  ESP              12  | 83C40C
+000078|          POP                  EBX                  | 5B
+000079|          POP                  EDI                  | 5F
+00007A| adjustStack by 1
+00007A|          POP                  ECX                  | 59
+00007B|          POP              236[ESI]                 | 8F86EC000000
+000081|          RET                   12                  | C20C00
+000084| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+Exception in thread "Jikes_RBoot_Thread": baseline Start: Final machine code for method java.util.logging.Level <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/util/logging/Level; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13801                  | 68E9350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/logging/Level; >
+00002D|          PUSH                  20                  | 6A14
+00002F|          PUSH           [570885A4]                 | FF35A4850857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3943                  | 68670F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] ldc 32
+000054|          PUSH           [57088578]                 | FF3578850857
+[6] ldc 33
+00005A|          PUSH           [5707FA6C]                 | FF356CFA0757
+[8] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000060|          MOV                  EAX           8[ESP] | 8B442408
+000064|          MOV                  EDX           4[ESP] | 8B542404
+000068|          CALL           [57089FC8]                 | FF15C89F0857
+[11] putstatic < BootstrapCL, Ljava/util/logging/Level;, OFF, Ljava/util/logging/Level; >
+00006E|          POP            [57089FA0]                 | 8F05A09F0857
+[14] new < BootstrapCL, Ljava/util/logging/Level; >
+000074|          PUSH                  20                  | 6A14
+000076|          PUSH           [570885A4]                 | FF35A4850857
+00007C|          PUSH                   0                  | 6A00
+00007E|          PUSH                   0                  | 6A00
+000080|          PUSH                   4                  | 6A04
+000082|          PUSH                   8                  | 6A08
+000084|          PUSH                3944                  | 68680F0000
+000089|          MOV                  EAX          24[ESP] | 8B442418
+00008D|          MOV                  EDX          20[ESP] | 8B542414
+000091|          CALL           [57081340]                 | FF1540130857
+000097|          PUSH                 EAX                  | 50
+[17] dup
+000098|          PUSH                [ESP]                 | FF3424
+[18] ldc 40
+00009B|          PUSH           [5708857C]                 | FF357C850857
+[20] sipush 1000
+0000A1|          PUSH                1000                  | 68E8030000
+[23] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0000A6|          MOV                  EAX           8[ESP] | 8B442408
+0000AA|          MOV                  EDX           4[ESP] | 8B542404
+0000AE|          CALL           [57089FC8]                 | FF15C89F0857
+[26] putstatic < BootstrapCL, Ljava/util/logging/Level;, SEVERE, Ljava/util/logging/Level; >
+0000B4|          POP            [57089FA4]                 | 8F05A49F0857
+[29] new < BootstrapCL, Ljava/util/logging/Level; >
+0000BA|          PUSH                  20                  | 6A14
+0000BC|          PUSH           [570885A4]                 | FF35A4850857
+0000C2|          PUSH                   0                  | 6A00
+0000C4|          PUSH                   0                  | 6A00
+0000C6|          PUSH                   4                  | 6A04
+0000C8|          PUSH                   8                  | 6A08
+0000CA|          PUSH                3945                  | 68690F0000
+0000CF|          MOV                  EAX          24[ESP] | 8B442418
+0000D3|          MOV                  EDX          20[ESP] | 8B542414
+0000D7|          CALL           [57081340]                 | FF1540130857
+0000DD|          PUSH                 EAX                  | 50
+[32] dup
+0000DE|          PUSH                [ESP]                 | FF3424
+[33] ldc 43
+0000E1|          PUSH           [57088580]                 | FF3580850857
+[35] sipush 900
+0000E7|          PUSH                 900                  | 6884030000
+[38] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0000EC|          MOV                  EAX           8[ESP] | 8B442408
+0000F0|          MOV                  EDX           4[ESP] | 8B542404
+0000F4|          CALL           [57089FC8]                 | FF15C89F0857
+[41] putstatic < BootstrapCL, Ljava/util/logging/Level;, WARNING, Ljava/util/logging/Level; >
+0000FA|          POP            [57089FA8]                 | 8F05A89F0857
+[44] new < BootstrapCL, Ljava/util/logging/Level; >
+000100|          PUSH                  20                  | 6A14
+000102|          PUSH           [570885A4]                 | FF35A4850857
+000108|          PUSH                   0                  | 6A00
+00010A|          PUSH                   0                  | 6A00
+00010C|          PUSH                   4                  | 6A04
+00010E|          PUSH                   8                  | 6A08
+000110|          PUSH                3946                  | 686A0F0000
+000115|          MOV                  EAX          24[ESP] | 8B442418
+000119|          MOV                  EDX          20[ESP] | 8B542414
+00011D|          CALL           [57081340]                 | FF1540130857
+000123|          PUSH                 EAX                  | 50
+[47] dup
+000124|          PUSH                [ESP]                 | FF3424
+[48] ldc 46
+000127|          PUSH           [57088584]                 | FF3584850857
+[50] sipush 800
+00012D|          PUSH                 800                  | 6820030000
+[53] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000132|          MOV                  EAX           8[ESP] | 8B442408
+000136|          MOV                  EDX           4[ESP] | 8B542404
+00013A|          CALL           [57089FC8]                 | FF15C89F0857
+[56] putstatic < BootstrapCL, Ljava/util/logging/Level;, INFO, Ljava/util/logging/Level; >
+000140|          POP            [57089FAC]                 | 8F05AC9F0857
+[59] new < BootstrapCL, Ljava/util/logging/Level; >
+000146|          PUSH                  20                  | 6A14
+000148|          PUSH           [570885A4]                 | FF35A4850857
+00014E|          PUSH                   0                  | 6A00
+000150|          PUSH                   0                  | 6A00
+000152|          PUSH                   4                  | 6A04
+000154|          PUSH                   8                  | 6A08
+000156|          PUSH                3947                  | 686B0F0000
+00015B|          MOV                  EAX          24[ESP] | 8B442418
+00015F|          MOV                  EDX          20[ESP] | 8B542414
+000163|          CALL           [57081340]                 | FF1540130857
+000169|          PUSH                 EAX                  | 50
+[62] dup
+00016A|          PUSH                [ESP]                 | FF3424
+[63] ldc 49
+00016D|          PUSH           [57088588]                 | FF3588850857
+[65] sipush 700
+000173|          PUSH                 700                  | 68BC020000
+[68] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000178|          MOV                  EAX           8[ESP] | 8B442408
+00017C|          MOV                  EDX           4[ESP] | 8B542404
+000180|          CALL           [57089FC8]                 | FF15C89F0857
+[71] putstatic < BootstrapCL, Ljava/util/logging/Level;, CONFIG, Ljava/util/logging/Level; >
+000186|          POP            [57089FB0]                 | 8F05B09F0857
+[74] new < BootstrapCL, Ljava/util/logging/Level; >
+00018C|          PUSH                  20                  | 6A14
+00018E|          PUSH           [570885A4]                 | FF35A4850857
+000194|          PUSH                   0                  | 6A00
+000196|          PUSH                   0                  | 6A00
+000198|          PUSH                   4                  | 6A04
+00019A|          PUSH                   8                  | 6A08
+00019C|          PUSH                3948                  | 686C0F0000
+0001A1|          MOV                  EAX          24[ESP] | 8B442418
+0001A5|          MOV                  EDX          20[ESP] | 8B542414
+0001A9|          CALL           [57081340]                 | FF1540130857
+0001AF|          PUSH                 EAX                  | 50
+[77] dup
+0001B0|          PUSH                [ESP]                 | FF3424
+[78] ldc 52
+0001B3|          PUSH           [5708858C]                 | FF358C850857
+[80] sipush 500
+0001B9|          PUSH                 500                  | 68F4010000
+[83] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+0001BE|          MOV                  EAX           8[ESP] | 8B442408
+0001C2|          MOV                  EDX           4[ESP] | 8B542404
+0001C6|          CALL           [57089FC8]                 | FF15C89F0857
+[86] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINE, Ljava/util/logging/Level; >
+0001CC|          POP            [57089FB4]                 | 8F05B49F0857
+[89] new < BootstrapCL, Ljava/util/logging/Level; >
+0001D2|          PUSH                  20                  | 6A14
+0001D4|          PUSH           [570885A4]                 | FF35A4850857
+0001DA|          PUSH                   0                  | 6A00
+0001DC|          PUSH                   0                  | 6A00
+0001DE|          PUSH                   4                  | 6A04
+0001E0|          PUSH                   8                  | 6A08
+0001E2|          PUSH                3949                  | 686D0F0000
+0001E7|          MOV                  EAX          24[ESP] | 8B442418
+0001EB|          MOV                  EDX          20[ESP] | 8B542414
+0001EF|          CALL           [57081340]                 | FF1540130857
+0001F5|          PUSH                 EAX                  | 50
+[92] dup
+0001F6|          PUSH                [ESP]                 | FF3424
+[93] ldc 55
+0001F9|          PUSH           [57088590]                 | FF3590850857
+[95] sipush 400
+0001FF|          PUSH                 400                  | 6890010000
+[98] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000204|          MOV                  EAX           8[ESP] | 8B442408
+000208|          MOV                  EDX           4[ESP] | 8B542404
+00020C|          CALL           [57089FC8]                 | FF15C89F0857
+[101] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINER, Ljava/util/logging/Level; >
+000212|          POP            [57089FB8]                 | 8F05B89F0857
+[104] new < BootstrapCL, Ljava/util/logging/Level; >
+000218|          PUSH                  20                  | 6A14
+00021A|          PUSH           [570885A4]                 | FF35A4850857
+000220|          PUSH                   0                  | 6A00
+000222|          PUSH                   0                  | 6A00
+000224|          PUSH                   4                  | 6A04
+000226|          PUSH                   8                  | 6A08
+000228|          PUSH                3950                  | 686E0F0000
+00022D|          MOV                  EAX          24[ESP] | 8B442418
+000231|          MOV                  EDX          20[ESP] | 8B542414
+000235|          CALL           [57081340]                 | FF1540130857
+00023B|          PUSH                 EAX                  | 50
+[107] dup
+00023C|          PUSH                [ESP]                 | FF3424
+[108] ldc 58
+00023F|          PUSH           [57088594]                 | FF3594850857
+[110] sipush 300
+000245|          PUSH                 300                  | 682C010000
+[113] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+00024A|          MOV                  EAX           8[ESP] | 8B442408
+00024E|          MOV                  EDX           4[ESP] | 8B542404
+000252|          CALL           [57089FC8]                 | FF15C89F0857
+[116] putstatic < BootstrapCL, Ljava/util/logging/Level;, FINEST, Ljava/util/logging/Level; >
+000258|          POP            [57089FBC]                 | 8F05BC9F0857
+[119] new < BootstrapCL, Ljava/util/logging/Level; >
+00025E|          PUSH                  20                  | 6A14
+000260|          PUSH           [570885A4]                 | FF35A4850857
+000266|          PUSH                   0                  | 6A00
+000268|          PUSH                   0                  | 6A00
+00026A|          PUSH                   4                  | 6A04
+00026C|          PUSH                   8                  | 6A08
+00026E|          PUSH                3951                  | 686F0F0000
+000273|          MOV                  EAX          24[ESP] | 8B442418
+000277|          MOV                  EDX          20[ESP] | 8B542414
+00027B|          CALL           [57081340]                 | FF1540130857
+000281|          PUSH                 EAX                  | 50
+[122] dup
+000282|          PUSH                [ESP]                 | FF3424
+[123] ldc 61
+000285|          PUSH           [57088598]                 | FF3598850857
+[125] ldc 62
+00028B|          PUSH           [5707FB48]                 | FF3548FB0757
+[127] invokespecial < BootstrapCL, Ljava/util/logging/Level;, <init>, (Ljava/lang/String;I)V >
+000291|          MOV                  EAX           8[ESP] | 8B442408
+000295|          MOV                  EDX           4[ESP] | 8B542404
+000299|          CALL           [57089FC8]                 | FF15C89F0857
+[130] putstatic < BootstrapCL, Ljava/util/logging/Level;, ALL, Ljava/util/logging/Level; >
+00029F|          POP            [57089FC0]                 | 8F05C09F0857
+[133] bipush 9
+0002A5|          PUSH                   9                  | 6A09
+[135] anewarray new < BootstrapCL, [Ljava/util/logging/Level; >
+0002A7|          PUSH                   2                  | 6A02
+0002A9|          PUSH                  12                  | 6A0C
+0002AB|          PUSH           [570885A8]                 | FF35A8850857
+0002B1|          PUSH                   0                  | 6A00
+0002B3|          PUSH                   4                  | 6A04
+0002B5|          PUSH                  12                  | 6A0C
+0002B7|          PUSH                3952                  | 68700F0000
+0002BC|          MOV                  EAX          28[ESP] | 8B44241C
+0002C0|          MOV                  EDX          24[ESP] | 8B542418
+0002C4|          CALL           [57081350]                 | FF1550130857
+0002CA|          PUSH                 EAX                  | 50
+[138] dup
+0002CB|          PUSH                [ESP]                 | FF3424
+[139] iconst_0
+0002CE|          PUSH                   0                  | 6A00
+[140] getstatic < BootstrapCL, Ljava/util/logging/Level;, ALL, Ljava/util/logging/Level; >
+0002D0|          PUSH           [57089FC0]                 | FF35C09F0857
+[143] aastore
+0002D6|          MOV                  EAX           8[ESP] | 8B442408
+0002DA|          MOV                  EDX           4[ESP] | 8B542404
+0002DE|          CALL           [57081328]                 | FF1528130857
+[144] dup
+0002E4|          PUSH                [ESP]                 | FF3424
+[145] iconst_1
+0002E7|          PUSH                   1                  | 6A01
+[146] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINEST, Ljava/util/logging/Level; >
+0002E9|          PUSH           [57089FBC]                 | FF35BC9F0857
+[149] aastore
+0002EF|          MOV                  EAX           8[ESP] | 8B442408
+0002F3|          MOV                  EDX           4[ESP] | 8B542404
+0002F7|          CALL           [57081328]                 | FF1528130857
+[150] dup
+0002FD|          PUSH                [ESP]                 | FF3424
+[151] iconst_2
+000300|          PUSH                   2                  | 6A02
+[152] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINER, Ljava/util/logging/Level; >
+000302|          PUSH           [57089FB8]                 | FF35B89F0857
+[155] aastore
+000308|          MOV                  EAX           8[ESP] | 8B442408
+00030C|          MOV                  EDX           4[ESP] | 8B542404
+000310|          CALL           [57081328]                 | FF1528130857
+[156] dup
+000316|          PUSH                [ESP]                 | FF3424
+[157] iconst_3
+000319|          PUSH                   3                  | 6A03
+[158] getstatic < BootstrapCL, Ljava/util/logging/Level;, FINE, Ljava/util/logging/Level; >
+00031B|          PUSH           [57089FB4]                 | FF35B49F0857
+[161] aastore
+000321|          MOV                  EAX           8[ESP] | 8B442408
+000325|          MOV                  EDX           4[ESP] | 8B542404
+000329|          CALL           [57081328]                 | FF1528130857
+[162] dup
+00032F|          PUSH                [ESP]                 | FF3424
+[163] iconst_4
+000332|          PUSH                   4                  | 6A04
+[164] getstatic < BootstrapCL, Ljava/util/logging/Level;, CONFIG, Ljava/util/logging/Level; >
+000334|          PUSH           [57089FB0]                 | FF35B09F0857
+[167] aastore
+00033A|          MOV                  EAX           8[ESP] | 8B442408
+00033E|          MOV                  EDX           4[ESP] | 8B542404
+000342|          CALL           [57081328]                 | FF1528130857
+[168] dup
+000348|          PUSH                [ESP]                 | FF3424
+[169] iconst_5
+00034B|          PUSH                   5                  | 6A05
+[170] getstatic < BootstrapCL, Ljava/util/logging/Level;, INFO, Ljava/util/logging/Level; >
+00034D|          PUSH           [57089FAC]                 | FF35AC9F0857
+[173] aastore
+000353|          MOV                  EAX           8[ESP] | 8B442408
+000357|          MOV                  EDX           4[ESP] | 8B542404
+00035B|          CALL           [57081328]                 | FF1528130857
+[174] dup
+000361|          PUSH                [ESP]                 | FF3424
+[175] bipush 6
+000364|          PUSH                   6                  | 6A06
+[177] getstatic < BootstrapCL, Ljava/util/logging/Level;, WARNING, Ljava/util/logging/Level; >
+000366|          PUSH           [57089FA8]                 | FF35A89F0857
+[180] aastore
+00036C|          MOV                  EAX           8[ESP] | 8B442408
+000370|          MOV                  EDX           4[ESP] | 8B542404
+000374|          CALL           [57081328]                 | FF1528130857
+[181] dup
+00037A|          PUSH                [ESP]                 | FF3424
+[182] bipush 7
+00037D|          PUSH                   7                  | 6A07
+[184] getstatic < BootstrapCL, Ljava/util/logging/Level;, SEVERE, Ljava/util/logging/Level; >
+00037F|          PUSH           [57089FA4]                 | FF35A49F0857
+[187] aastore
+000385|          MOV                  EAX           8[ESP] | 8B442408
+000389|          MOV                  EDX           4[ESP] | 8B542404
+00038D|          CALL           [57081328]                 | FF1528130857
+[188] dup
+000393|          PUSH                [ESP]                 | FF3424
+[189] bipush 8
+000396|          PUSH                   8                  | 6A08
+[191] getstatic < BootstrapCL, Ljava/util/logging/Level;, OFF, Ljava/util/logging/Level; >
+000398|          PUSH           [57089FA0]                 | FF35A09F0857
+[194] aastore
+00039E|          MOV                  EAX           8[ESP] | 8B442408
+0003A2|          MOV                  EDX           4[ESP] | 8B542404
+0003A6|          CALL           [57081328]                 | FF1528130857
+[195] putstatic < BootstrapCL, Ljava/util/logging/Level;, knownLevels, [Ljava/util/logging/Level; >
+0003AC|          POP            [57089FC4]                 | 8F05C49F0857
+[198] return
+0003B2| start of epilogue
+0003B2| From genEpilogue 3.SpaceToRelease is0
+0003B2|          POP                  EBX                  | 5B
+0003B3|          POP                  EDI                  | 5F
+0003B4| adjustStack by 1
+0003B4|          POP                  ECX                  | 59
+0003B5|          POP              236[ESI]                 | 8F86EC000000
+0003BB|          RET                                       | C3
+0003BC| End of epilogue
+baseline End: Final machine code for method java.util.logging.Level <clinit> ()V
+baseline Start: Final machine code for method gnu.java.nio.charset.EncodingHelper <clinit> ()V
+000000| prologue for < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13802                  | 68EA350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002D|          PUSH                  40                  | 6A28
+00002F|          PUSH           [570862C0]                 | FF35C0620857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3953                  | 68710F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000054|          MOV                  EAX            [ESP] | 8B0424
+000057|          CALL           [5708974C]                 | FF154C970857
+[7] putstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00005D|          POP            [5708AF6C]                 | 8F056CAF0857
+[10] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000063|          PUSH           [5708AF6C]                 | FF356CAF0857
+[13] ldc 19
+000069|          PUSH           [57087510]                 | FF3510750857
+[15] ldc 21
+00006F|          PUSH           [57087520]                 | FF3520750857
+[17] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000075|          MOV                  EDX           8[ESP] | 8B542408
+000079|          MOV                  ECX         -12[EDX] | 8B4AF4
+00007C|          MOV                  EAX           8[ESP] | 8B442408
+000080|          MOV                  EDX           4[ESP] | 8B542404
+000084|          CALL             100[ECX]                 | FF5164
+000087|          PUSH                 EAX                  | 50
+[20] pop
+000088| adjustStack by 1
+000088|          POP                  ECX                  | 59
+[21] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000089|          PUSH           [5708AF6C]                 | FF356CAF0857
+[24] ldc 27
+00008F|          PUSH           [57087684]                 | FF3584760857
+[26] ldc 29
+000095|          PUSH           [570885F0]                 | FF35F0850857
+[28] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00009B|          MOV                  EDX           8[ESP] | 8B542408
+00009F|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000A2|          MOV                  EAX           8[ESP] | 8B442408
+0000A6|          MOV                  EDX           4[ESP] | 8B542404
+0000AA|          CALL             100[ECX]                 | FF5164
+0000AD|          PUSH                 EAX                  | 50
+[31] pop
+0000AE| adjustStack by 1
+0000AE|          POP                  ECX                  | 59
+[32] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000AF|          PUSH           [5708AF6C]                 | FF356CAF0857
+[35] ldc 31
+0000B5|          PUSH           [570876AC]                 | FF35AC760857
+[37] ldc 33
+0000BB|          PUSH           [570885F4]                 | FF35F4850857
+[39] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0000C1|          MOV                  EDX           8[ESP] | 8B542408
+0000C5|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000C8|          MOV                  EAX           8[ESP] | 8B442408
+0000CC|          MOV                  EDX           4[ESP] | 8B542404
+0000D0|          CALL             100[ECX]                 | FF5164
+0000D3|          PUSH                 EAX                  | 50
+[42] pop
+0000D4| adjustStack by 1
+0000D4|          POP                  ECX                  | 59
+[43] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000D5|          PUSH           [5708AF6C]                 | FF356CAF0857
+[46] ldc 35
+0000DB|          PUSH           [570876CC]                 | FF35CC760857
+[48] ldc 37
+0000E1|          PUSH           [570885F8]                 | FF35F8850857
+[50] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0000E7|          MOV                  EDX           8[ESP] | 8B542408
+0000EB|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000EE|          MOV                  EAX           8[ESP] | 8B442408
+0000F2|          MOV                  EDX           4[ESP] | 8B542404
+0000F6|          CALL             100[ECX]                 | FF5164
+0000F9|          PUSH                 EAX                  | 50
+[53] pop
+0000FA| adjustStack by 1
+0000FA|          POP                  ECX                  | 59
+[54] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0000FB|          PUSH           [5708AF6C]                 | FF356CAF0857
+[57] ldc 39
+000101|          PUSH           [570876E8]                 | FF35E8760857
+[59] ldc 41
+000107|          PUSH           [570885FC]                 | FF35FC850857
+[61] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00010D|          MOV                  EDX           8[ESP] | 8B542408
+000111|          MOV                  ECX         -12[EDX] | 8B4AF4
+000114|          MOV                  EAX           8[ESP] | 8B442408
+000118|          MOV                  EDX           4[ESP] | 8B542404
+00011C|          CALL             100[ECX]                 | FF5164
+00011F|          PUSH                 EAX                  | 50
+[64] pop
+000120| adjustStack by 1
+000120|          POP                  ECX                  | 59
+[65] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000121|          PUSH           [5708AF6C]                 | FF356CAF0857
+[68] ldc 43
+000127|          PUSH           [57087708]                 | FF3508770857
+[70] ldc 45
+00012D|          PUSH           [57088600]                 | FF3500860857
+[72] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000133|          MOV                  EDX           8[ESP] | 8B542408
+000137|          MOV                  ECX         -12[EDX] | 8B4AF4
+00013A|          MOV                  EAX           8[ESP] | 8B442408
+00013E|          MOV                  EDX           4[ESP] | 8B542404
+000142|          CALL             100[ECX]                 | FF5164
+000145|          PUSH                 EAX                  | 50
+[75] pop
+000146| adjustStack by 1
+000146|          POP                  ECX                  | 59
+[76] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000147|          PUSH           [5708AF6C]                 | FF356CAF0857
+[79] ldc 47
+00014D|          PUSH           [57087728]                 | FF3528770857
+[81] ldc 49
+000153|          PUSH           [57088604]                 | FF3504860857
+[83] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000159|          MOV                  EDX           8[ESP] | 8B542408
+00015D|          MOV                  ECX         -12[EDX] | 8B4AF4
+000160|          MOV                  EAX           8[ESP] | 8B442408
+000164|          MOV                  EDX           4[ESP] | 8B542404
+000168|          CALL             100[ECX]                 | FF5164
+00016B|          PUSH                 EAX                  | 50
+[86] pop
+00016C| adjustStack by 1
+00016C|          POP                  ECX                  | 59
+[87] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00016D|          PUSH           [5708AF6C]                 | FF356CAF0857
+[90] ldc 51
+000173|          PUSH           [57086BA0]                 | FF35A06B0857
+[92] ldc 53
+000179|          PUSH           [5708758C]                 | FF358C750857
+[94] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00017F|          MOV                  EDX           8[ESP] | 8B542408
+000183|          MOV                  ECX         -12[EDX] | 8B4AF4
+000186|          MOV                  EAX           8[ESP] | 8B442408
+00018A|          MOV                  EDX           4[ESP] | 8B542404
+00018E|          CALL             100[ECX]                 | FF5164
+000191|          PUSH                 EAX                  | 50
+[97] pop
+000192| adjustStack by 1
+000192|          POP                  ECX                  | 59
+[98] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000193|          PUSH           [5708AF6C]                 | FF356CAF0857
+[101] ldc 55
+000199|          PUSH           [57087748]                 | FF3548770857
+[103] ldc 57
+00019F|          PUSH           [5708774C]                 | FF354C770857
+[105] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001A5|          MOV                  EDX           8[ESP] | 8B542408
+0001A9|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001AC|          MOV                  EAX           8[ESP] | 8B442408
+0001B0|          MOV                  EDX           4[ESP] | 8B542404
+0001B4|          CALL             100[ECX]                 | FF5164
+0001B7|          PUSH                 EAX                  | 50
+[108] pop
+0001B8| adjustStack by 1
+0001B8|          POP                  ECX                  | 59
+[109] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0001B9|          PUSH           [5708AF6C]                 | FF356CAF0857
+[112] ldc 59
+0001BF|          PUSH           [5708778C]                 | FF358C770857
+[114] ldc 61
+0001C5|          PUSH           [57087790]                 | FF3590770857
+[116] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001CB|          MOV                  EDX           8[ESP] | 8B542408
+0001CF|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001D2|          MOV                  EAX           8[ESP] | 8B442408
+0001D6|          MOV                  EDX           4[ESP] | 8B542404
+0001DA|          CALL             100[ECX]                 | FF5164
+0001DD|          PUSH                 EAX                  | 50
+[119] pop
+0001DE| adjustStack by 1
+0001DE|          POP                  ECX                  | 59
+[120] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0001DF|          PUSH           [5708AF6C]                 | FF356CAF0857
+[123] ldc 63
+0001E5|          PUSH           [570877D0]                 | FF35D0770857
+[125] ldc 65
+0001EB|          PUSH           [570877D4]                 | FF35D4770857
+[127] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001F1|          MOV                  EDX           8[ESP] | 8B542408
+0001F5|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001F8|          MOV                  EAX           8[ESP] | 8B442408
+0001FC|          MOV                  EDX           4[ESP] | 8B542404
+000200|          CALL             100[ECX]                 | FF5164
+000203|          PUSH                 EAX                  | 50
+[130] pop
+000204| adjustStack by 1
+000204|          POP                  ECX                  | 59
+[131] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000205|          PUSH           [5708AF6C]                 | FF356CAF0857
+[134] ldc 67
+00020B|          PUSH           [57087810]                 | FF3510780857
+[136] ldc 69
+000211|          PUSH           [57087814]                 | FF3514780857
+[138] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000217|          MOV                  EDX           8[ESP] | 8B542408
+00021B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00021E|          MOV                  EAX           8[ESP] | 8B442408
+000222|          MOV                  EDX           4[ESP] | 8B542404
+000226|          CALL             100[ECX]                 | FF5164
+000229|          PUSH                 EAX                  | 50
+[141] pop
+00022A| adjustStack by 1
+00022A|          POP                  ECX                  | 59
+[142] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00022B|          PUSH           [5708AF6C]                 | FF356CAF0857
+[145] ldc 71
+000231|          PUSH           [5708785C]                 | FF355C780857
+[147] ldc 73
+000237|          PUSH           [57087860]                 | FF3560780857
+[149] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00023D|          MOV                  EDX           8[ESP] | 8B542408
+000241|          MOV                  ECX         -12[EDX] | 8B4AF4
+000244|          MOV                  EAX           8[ESP] | 8B442408
+000248|          MOV                  EDX           4[ESP] | 8B542404
+00024C|          CALL             100[ECX]                 | FF5164
+00024F|          PUSH                 EAX                  | 50
+[152] pop
+000250| adjustStack by 1
+000250|          POP                  ECX                  | 59
+[153] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000251|          PUSH           [5708AF6C]                 | FF356CAF0857
+[156] ldc 75
+000257|          PUSH           [570878A4]                 | FF35A4780857
+[158] ldc 77
+00025D|          PUSH           [570878A8]                 | FF35A8780857
+[160] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000263|          MOV                  EDX           8[ESP] | 8B542408
+000267|          MOV                  ECX         -12[EDX] | 8B4AF4
+00026A|          MOV                  EAX           8[ESP] | 8B442408
+00026E|          MOV                  EDX           4[ESP] | 8B542404
+000272|          CALL             100[ECX]                 | FF5164
+000275|          PUSH                 EAX                  | 50
+[163] pop
+000276| adjustStack by 1
+000276|          POP                  ECX                  | 59
+[164] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000277|          PUSH           [5708AF6C]                 | FF356CAF0857
+[167] ldc 79
+00027D|          PUSH           [570878D0]                 | FF35D0780857
+[169] ldc 81
+000283|          PUSH           [57088608]                 | FF3508860857
+[171] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000289|          MOV                  EDX           8[ESP] | 8B542408
+00028D|          MOV                  ECX         -12[EDX] | 8B4AF4
+000290|          MOV                  EAX           8[ESP] | 8B442408
+000294|          MOV                  EDX           4[ESP] | 8B542404
+000298|          CALL             100[ECX]                 | FF5164
+00029B|          PUSH                 EAX                  | 50
+[174] pop
+00029C| adjustStack by 1
+00029C|          POP                  ECX                  | 59
+[175] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00029D|          PUSH           [5708AF6C]                 | FF356CAF0857
+[178] ldc 83
+0002A3|          PUSH           [5708791C]                 | FF351C790857
+[180] ldc 85
+0002A9|          PUSH           [57087920]                 | FF3520790857
+[182] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002AF|          MOV                  EDX           8[ESP] | 8B542408
+0002B3|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002B6|          MOV                  EAX           8[ESP] | 8B442408
+0002BA|          MOV                  EDX           4[ESP] | 8B542404
+0002BE|          CALL             100[ECX]                 | FF5164
+0002C1|          PUSH                 EAX                  | 50
+[185] pop
+0002C2| adjustStack by 1
+0002C2|          POP                  ECX                  | 59
+[186] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0002C3|          PUSH           [5708AF6C]                 | FF356CAF0857
+[189] ldc 87
+0002C9|          PUSH           [57086BC8]                 | FF35C86B0857
+[191] ldc 89
+0002CF|          PUSH           [570875E0]                 | FF35E0750857
+[193] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002D5|          MOV                  EDX           8[ESP] | 8B542408
+0002D9|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002DC|          MOV                  EAX           8[ESP] | 8B442408
+0002E0|          MOV                  EDX           4[ESP] | 8B542404
+0002E4|          CALL             100[ECX]                 | FF5164
+0002E7|          PUSH                 EAX                  | 50
+[196] pop
+0002E8| adjustStack by 1
+0002E8|          POP                  ECX                  | 59
+[197] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0002E9|          PUSH           [5708AF6C]                 | FF356CAF0857
+[200] ldc 91
+0002EF|          PUSH           [570875F8]                 | FF35F8750857
+[202] ldc 93
+0002F5|          PUSH           [57087628]                 | FF3528760857
+[204] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0002FB|          MOV                  EDX           8[ESP] | 8B542408
+0002FF|          MOV                  ECX         -12[EDX] | 8B4AF4
+000302|          MOV                  EAX           8[ESP] | 8B442408
+000306|          MOV                  EDX           4[ESP] | 8B542404
+00030A|          CALL             100[ECX]                 | FF5164
+00030D|          PUSH                 EAX                  | 50
+[207] pop
+00030E| adjustStack by 1
+00030E|          POP                  ECX                  | 59
+[208] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00030F|          PUSH           [5708AF6C]                 | FF356CAF0857
+[211] ldc 95
+000315|          PUSH           [57087638]                 | FF3538760857
+[213] ldc 97
+00031B|          PUSH           [57087654]                 | FF3554760857
+[215] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000321|          MOV                  EDX           8[ESP] | 8B542408
+000325|          MOV                  ECX         -12[EDX] | 8B4AF4
+000328|          MOV                  EAX           8[ESP] | 8B442408
+00032C|          MOV                  EDX           4[ESP] | 8B542404
+000330|          CALL             100[ECX]                 | FF5164
+000333|          PUSH                 EAX                  | 50
+[218] pop
+000334| adjustStack by 1
+000334|          POP                  ECX                  | 59
+[219] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000335|          PUSH           [5708AF6C]                 | FF356CAF0857
+[222] ldc 99
+00033B|          PUSH           [5708860C]                 | FF350C860857
+[224] ldc 101
+000341|          PUSH           [57088610]                 | FF3510860857
+[226] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000347|          MOV                  EDX           8[ESP] | 8B542408
+00034B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00034E|          MOV                  EAX           8[ESP] | 8B442408
+000352|          MOV                  EDX           4[ESP] | 8B542404
+000356|          CALL             100[ECX]                 | FF5164
+000359|          PUSH                 EAX                  | 50
+[229] pop
+00035A| adjustStack by 1
+00035A|          POP                  ECX                  | 59
+[230] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+00035B|          PUSH           [5708AF6C]                 | FF356CAF0857
+[233] ldc 103
+000361|          PUSH           [57088614]                 | FF3514860857
+[235] ldc 105
+000367|          PUSH           [57088618]                 | FF3518860857
+[237] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00036D|          MOV                  EDX           8[ESP] | 8B542408
+000371|          MOV                  ECX         -12[EDX] | 8B4AF4
+000374|          MOV                  EAX           8[ESP] | 8B442408
+000378|          MOV                  EDX           4[ESP] | 8B542404
+00037C|          CALL             100[ECX]                 | FF5164
+00037F|          PUSH                 EAX                  | 50
+[240] pop
+000380| adjustStack by 1
+000380|          POP                  ECX                  | 59
+[241] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+000381|          PUSH           [5708AF6C]                 | FF356CAF0857
+[244] ldc 107
+000387|          PUSH           [5708861C]                 | FF351C860857
+[246] ldc 109
+00038D|          PUSH           [57088620]                 | FF3520860857
+[248] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000393|          MOV                  EDX           8[ESP] | 8B542408
+000397|          MOV                  ECX         -12[EDX] | 8B4AF4
+00039A|          MOV                  EAX           8[ESP] | 8B442408
+00039E|          MOV                  EDX           4[ESP] | 8B542404
+0003A2|          CALL             100[ECX]                 | FF5164
+0003A5|          PUSH                 EAX                  | 50
+[251] pop
+0003A6| adjustStack by 1
+0003A6|          POP                  ECX                  | 59
+[252] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003A7|          PUSH           [5708AF6C]                 | FF356CAF0857
+[255] ldc 111
+0003AD|          PUSH           [57088624]                 | FF3524860857
+[257] ldc 113
+0003B3|          PUSH           [57088628]                 | FF3528860857
+[259] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0003B9|          MOV                  EDX           8[ESP] | 8B542408
+0003BD|          MOV                  ECX         -12[EDX] | 8B4AF4
+0003C0|          MOV                  EAX           8[ESP] | 8B442408
+0003C4|          MOV                  EDX           4[ESP] | 8B542404
+0003C8|          CALL             100[ECX]                 | FF5164
+0003CB|          PUSH                 EAX                  | 50
+[262] pop
+0003CC| adjustStack by 1
+0003CC|          POP                  ECX                  | 59
+[263] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003CD|          PUSH           [5708AF6C]                 | FF356CAF0857
+[266] ldc 115
+0003D3|          PUSH           [5708862C]                 | FF352C860857
+[268] ldc 117
+0003D9|          PUSH           [57088630]                 | FF3530860857
+[270] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0003DF|          MOV                  EDX           8[ESP] | 8B542408
+0003E3|          MOV                  ECX         -12[EDX] | 8B4AF4
+0003E6|          MOV                  EAX           8[ESP] | 8B442408
+0003EA|          MOV                  EDX           4[ESP] | 8B542404
+0003EE|          CALL             100[ECX]                 | FF5164
+0003F1|          PUSH                 EAX                  | 50
+[273] pop
+0003F2| adjustStack by 1
+0003F2|          POP                  ECX                  | 59
+[274] getstatic < BootstrapCL, Lgnu/java/nio/charset/EncodingHelper;, canonicalNames, Ljava/util/HashMap; >
+0003F3|          PUSH           [5708AF6C]                 | FF356CAF0857
+[277] ldc 119
+0003F9|          PUSH           [57088634]                 | FF3534860857
+[279] ldc 121
+0003FF|          PUSH           [57088638]                 | FF3538860857
+[281] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+000405|          MOV                  EDX           8[ESP] | 8B542408
+000409|          MOV                  ECX         -12[EDX] | 8B4AF4
+00040C|          MOV                  EAX           8[ESP] | 8B442408
+000410|          MOV                  EDX           4[ESP] | 8B542404
+000414|          CALL             100[ECX]                 | FF5164
+000417|          PUSH                 EAX                  | 50
+[284] pop
+000418| adjustStack by 1
+000418|          POP                  ECX                  | 59
+[285] return
+000419| start of epilogue
+000419| From genEpilogue 3.SpaceToRelease is0
+000419|          POP                  EBX                  | 5B
+00041A|          POP                  EDI                  | 5F
+00041B| adjustStack by 1
+00041B|          POP                  ECX                  | 59
+00041C|          POP              236[ESI]                 | 8F86EC000000
+000422|          RET                                       | C3
+000423| End of epilogue
+baseline End: Final machine code for method gnu.java.nio.charset.EncodingHelper <clinit> ()V
+baseline Start: Final machine code for method java.lang.reflect.Proxy <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/lang/reflect/Proxy; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13803                  | 68EB350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002D|          PUSH                  40                  | 6A28
+00002F|          PUSH           [570862C0]                 | FF35C0620857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3954                  | 68720F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000054|          MOV                  EAX            [ESP] | 8B0424
+000057|          CALL           [5708974C]                 | FF154C970857
+[7] putstatic < BootstrapCL, Ljava/lang/reflect/Proxy;, proxyClasses, Ljava/util/Map; >
+00005D|          POP            [5708D014]                 | 8F0514D00857
+[10] return
+000063| start of epilogue
+000063| From genEpilogue 3.SpaceToRelease is0
+000063|          POP                  EBX                  | 5B
+000064|          POP                  EDI                  | 5F
+000065| adjustStack by 1
+000065|          POP                  ECX                  | 59
+000066|          POP              236[ESI]                 | 8F86EC000000
+00006C|          RET                                       | C3
+00006D| End of epilogue
+baseline End: Final machine code for method java.lang.reflect.Proxy <clinit> ()V
+baseline Start: Final machine code for method java.lang.reflect.Proxy$ProxySignature <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13804                  | 68EC350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=1. ParameterWords=0
+000013| EmptySatckOffset argument is 4
+000013| adjustStack by -1
+000013|          PUSH                 EAX                  | 50
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] new < BootstrapCL, Ljava/util/HashMap; >
+00002E|          PUSH                  40                  | 6A28
+000030|          PUSH           [570862C0]                 | FF35C0620857
+000036|          PUSH                   0                  | 6A00
+000038|          PUSH                   0                  | 6A00
+00003A|          PUSH                   4                  | 6A04
+00003C|          PUSH                   8                  | 6A08
+00003E|          PUSH                3955                  | 68730F0000
+000043|          MOV                  EAX          24[ESP] | 8B442418
+000047|          MOV                  EDX          20[ESP] | 8B542414
+00004B|          CALL           [57081340]                 | FF1540130857
+000051|          PUSH                 EAX                  | 50
+[3] dup
+000052|          PUSH                [ESP]                 | FF3424
+[4] invokespecial < BootstrapCL, Ljava/util/HashMap;, <init>, ()V >
+000055|          MOV                  EAX            [ESP] | 8B0424
+000058|          CALL           [5708974C]                 | FF154C970857
+[7] putstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00005E|          POP            [5708DC54]                 | 8F0554DC0857
+[10] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+000064|          PUSH                  16                  | 6A10
+000066|          PUSH           [57086408]                 | FF3508640857
+00006C|          PUSH                   0                  | 6A00
+00006E|          PUSH                   0                  | 6A00
+000070|          PUSH                   4                  | 6A04
+000072|          PUSH                   8                  | 6A08
+000074|          PUSH                3956                  | 68740F0000
+000079|          MOV                  EAX          24[ESP] | 8B442418
+00007D|          MOV                  EDX          20[ESP] | 8B542414
+000081|          CALL           [57081340]                 | FF1540130857
+000087|          PUSH                 EAX                  | 50
+[13] dup
+000088|          PUSH                [ESP]                 | FF3424
+[14] ldc 3
+00008B|          PUSH           [5708E4B8]                 | FF35B8E40857
+[16] ldc 21
+000091|          PUSH           [57083840]                 | FF3540380857
+[18] iconst_1
+000097|          PUSH                   1                  | 6A01
+[19] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+000099|          PUSH                   2                  | 6A02
+00009B|          PUSH                  12                  | 6A0C
+00009D|          PUSH           [5708830C]                 | FF350C830857
+0000A3|          PUSH                   0                  | 6A00
+0000A5|          PUSH                   4                  | 6A04
+0000A7|          PUSH                  12                  | 6A0C
+0000A9|          PUSH                3957                  | 68750F0000
+0000AE|          MOV                  EAX          28[ESP] | 8B44241C
+0000B2|          MOV                  EDX          24[ESP] | 8B542418
+0000B6|          CALL           [57081350]                 | FF1550130857
+0000BC|          PUSH                 EAX                  | 50
+[22] dup
+0000BD|          PUSH                [ESP]                 | FF3424
+[23] iconst_0
+0000C0|          PUSH                   0                  | 6A00
+[24] ldc 3
+0000C2|          PUSH           [5708E4B8]                 | FF35B8E40857
+[26] aastore
+0000C8|          MOV                  EAX           8[ESP] | 8B442408
+0000CC|          MOV                  EDX           4[ESP] | 8B542404
+0000D0|          CALL           [57081328]                 | FF1528130857
+[27] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+0000D6|          MOV                  EDX           8[ESP] | 8B542408
+0000DA|          MOV                  ECX         -12[EDX] | 8B4AF4
+0000DD|          MOV                  EAX           8[ESP] | 8B442408
+0000E1|          MOV                  EDX           4[ESP] | 8B542404
+0000E5|          CALL             304[ECX]                 | FF9130010000
+0000EB|          PUSH                 EAX                  | 50
+[30] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+0000EC|          MOV                  EAX           4[ESP] | 8B442404
+0000F0|          MOV                  EDX            [ESP] | 8B1424
+0000F3|          CALL           [5708DC58]                 | FF1558DC0857
+[33] astore_0
+0000F9|          POP                 [ESP]                 | 8F0424
+[34] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+0000FC|          PUSH           [5708DC54]                 | FF3554DC0857
+[37] aload_0
+000102|          PUSH               4[ESP]                 | FF742404
+[38] aload_0
+000106|          PUSH               8[ESP]                 | FF742408
+[39] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00010A|          MOV                  EDX           8[ESP] | 8B542408
+00010E|          MOV                  ECX         -12[EDX] | 8B4AF4
+000111|          MOV                  EAX           8[ESP] | 8B442408
+000115|          MOV                  EDX           4[ESP] | 8B542404
+000119|          CALL             100[ECX]                 | FF5164
+00011C|          PUSH                 EAX                  | 50
+[42] pop
+00011D| adjustStack by 1
+00011D|          POP                  ECX                  | 59
+[43] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+00011E|          PUSH                  16                  | 6A10
+000120|          PUSH           [57086408]                 | FF3508640857
+000126|          PUSH                   0                  | 6A00
+000128|          PUSH                   0                  | 6A00
+00012A|          PUSH                   4                  | 6A04
+00012C|          PUSH                   8                  | 6A08
+00012E|          PUSH                3958                  | 68760F0000
+000133|          MOV                  EAX          24[ESP] | 8B442418
+000137|          MOV                  EDX          20[ESP] | 8B542414
+00013B|          CALL           [57081340]                 | FF1540130857
+000141|          PUSH                 EAX                  | 50
+[46] dup
+000142|          PUSH                [ESP]                 | FF3424
+[47] ldc 3
+000145|          PUSH           [5708E4B8]                 | FF35B8E40857
+[49] ldc 36
+00014B|          PUSH           [5708383C]                 | FF353C380857
+[51] iconst_0
+000151|          PUSH                   0                  | 6A00
+[52] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+000153|          PUSH                   2                  | 6A02
+000155|          PUSH                  12                  | 6A0C
+000157|          PUSH           [5708830C]                 | FF350C830857
+00015D|          PUSH                   0                  | 6A00
+00015F|          PUSH                   4                  | 6A04
+000161|          PUSH                  12                  | 6A0C
+000163|          PUSH                3959                  | 68770F0000
+000168|          MOV                  EAX          28[ESP] | 8B44241C
+00016C|          MOV                  EDX          24[ESP] | 8B542418
+000170|          CALL           [57081350]                 | FF1550130857
+000176|          PUSH                 EAX                  | 50
+[55] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+000177|          MOV                  EDX           8[ESP] | 8B542408
+00017B|          MOV                  ECX         -12[EDX] | 8B4AF4
+00017E|          MOV                  EAX           8[ESP] | 8B442408
+000182|          MOV                  EDX           4[ESP] | 8B542404
+000186|          CALL             304[ECX]                 | FF9130010000
+00018C|          PUSH                 EAX                  | 50
+[58] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+00018D|          MOV                  EAX           4[ESP] | 8B442404
+000191|          MOV                  EDX            [ESP] | 8B1424
+000194|          CALL           [5708DC58]                 | FF1558DC0857
+[61] astore_0
+00019A|          POP                 [ESP]                 | 8F0424
+[62] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00019D|          PUSH           [5708DC54]                 | FF3554DC0857
+[65] aload_0
+0001A3|          PUSH               4[ESP]                 | FF742404
+[66] aload_0
+0001A7|          PUSH               8[ESP]                 | FF742408
+[67] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+0001AB|          MOV                  EDX           8[ESP] | 8B542408
+0001AF|          MOV                  ECX         -12[EDX] | 8B4AF4
+0001B2|          MOV                  EAX           8[ESP] | 8B442408
+0001B6|          MOV                  EDX           4[ESP] | 8B542404
+0001BA|          CALL             100[ECX]                 | FF5164
+0001BD|          PUSH                 EAX                  | 50
+[70] pop
+0001BE| adjustStack by 1
+0001BE|          POP                  ECX                  | 59
+[71] new < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature; >
+0001BF|          PUSH                  16                  | 6A10
+0001C1|          PUSH           [57086408]                 | FF3508640857
+0001C7|          PUSH                   0                  | 6A00
+0001C9|          PUSH                   0                  | 6A00
+0001CB|          PUSH                   4                  | 6A04
+0001CD|          PUSH                   8                  | 6A08
+0001CF|          PUSH                3960                  | 68780F0000
+0001D4|          MOV                  EAX          24[ESP] | 8B442418
+0001D8|          MOV                  EDX          20[ESP] | 8B542414
+0001DC|          CALL           [57081340]                 | FF1540130857
+0001E2|          PUSH                 EAX                  | 50
+[74] dup
+0001E3|          PUSH                [ESP]                 | FF3424
+[75] ldc 3
+0001E6|          PUSH           [5708E4B8]                 | FF35B8E40857
+[77] ldc 38
+0001EC|          PUSH           [57083844]                 | FF3544380857
+[79] iconst_0
+0001F2|          PUSH                   0                  | 6A00
+[80] anewarray new < BootstrapCL, [Ljava/lang/Class; >
+0001F4|          PUSH                   2                  | 6A02
+0001F6|          PUSH                  12                  | 6A0C
+0001F8|          PUSH           [5708830C]                 | FF350C830857
+0001FE|          PUSH                   0                  | 6A00
+000200|          PUSH                   4                  | 6A04
+000202|          PUSH                  12                  | 6A0C
+000204|          PUSH                3961                  | 68790F0000
+000209|          MOV                  EAX          28[ESP] | 8B44241C
+00020D|          MOV                  EDX          24[ESP] | 8B542418
+000211|          CALL           [57081350]                 | FF1550130857
+000217|          PUSH                 EAX                  | 50
+[83] invokevirtual < BootstrapCL, Ljava/lang/Class;, getMethod, (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; >
+000218|          MOV                  EDX           8[ESP] | 8B542408
+00021C|          MOV                  ECX         -12[EDX] | 8B4AF4
+00021F|          MOV                  EAX           8[ESP] | 8B442408
+000223|          MOV                  EDX           4[ESP] | 8B542404
+000227|          CALL             304[ECX]                 | FF9130010000
+00022D|          PUSH                 EAX                  | 50
+[86] invokespecial < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, <init>, (Ljava/lang/reflect/Method;)V >
+00022E|          MOV                  EAX           4[ESP] | 8B442404
+000232|          MOV                  EDX            [ESP] | 8B1424
+000235|          CALL           [5708DC58]                 | FF1558DC0857
+[89] astore_0
+00023B|          POP                 [ESP]                 | 8F0424
+[90] getstatic < BootstrapCL, Ljava/lang/reflect/Proxy$ProxySignature;, coreMethods, Ljava/util/HashMap; >
+00023E|          PUSH           [5708DC54]                 | FF3554DC0857
+[93] aload_0
+000244|          PUSH               4[ESP]                 | FF742404
+[94] aload_0
+000248|          PUSH               8[ESP]                 | FF742408
+[95] invokevirtual < BootstrapCL, Ljava/util/HashMap;, put, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; >
+00024C|          MOV                  EDX           8[ESP] | 8B542408
+000250|          MOV                  ECX         -12[EDX] | 8B4AF4
+000253|          MOV                  EAX           8[ESP] | 8B442408
+000257|          MOV                  EDX           4[ESP] | 8B542404
+00025B|          CALL             100[ECX]                 | FF5164
+00025E|          PUSH                 EAX                  | 50
+[98] pop
+00025F| adjustStack by 1
+00025F|          POP                  ECX                  | 59
+[99] goto 35 [134] 
+000260|          JMP                  134                  | E900000000
+[102] astore_0
+000265|          POP                 [ESP]                 | 8F0424
+[103] new < BootstrapCL, Ljava/lang/InternalError; >
+000268|          PUSH                  24                  | 6A18
+00026A|          PUSH           [5708649C]                 | FF359C640857
+000270|          PUSH                   0                  | 6A00
+000272|          PUSH                   0                  | 6A00
+000274|          PUSH                   4                  | 6A04
+000276|          PUSH                   8                  | 6A08
+000278|          PUSH                3962                  | 687A0F0000
+00027D|          MOV                  EAX          24[ESP] | 8B442418
+000281|          MOV                  EDX          20[ESP] | 8B542414
+000285|          CALL           [57081340]                 | FF1540130857
+00028B|          PUSH                 EAX                  | 50
+[106] dup
+00028C|          PUSH                [ESP]                 | FF3424
+[107] new < BootstrapCL, Ljava/lang/StringBuilder; >
+00028F|          PUSH                  16                  | 6A10
+000291|          PUSH           [57087CBC]                 | FF35BC7C0857
+000297|          PUSH                   0                  | 6A00
+000299|          PUSH                   0                  | 6A00
+00029B|          PUSH                   4                  | 6A04
+00029D|          PUSH                   8                  | 6A08
+00029F|          PUSH                3963                  | 687B0F0000
+0002A4|          MOV                  EAX          24[ESP] | 8B442418
+0002A8|          MOV                  EDX          20[ESP] | 8B542414
+0002AC|          CALL           [57081340]                 | FF1540130857
+0002B2|          PUSH                 EAX                  | 50
+[110] dup
+0002B3|          PUSH                [ESP]                 | FF3424
+[111] ldc 44
+0002B6|          PUSH           [57081714]                 | FF3514170857
+[113] invokespecial < BootstrapCL, Ljava/lang/StringBuilder;, <init>, (Ljava/lang/String;)V >
+0002BC|          MOV                  EAX           4[ESP] | 8B442404
+0002C0|          MOV                  EDX            [ESP] | 8B1424
+0002C3|          CALL           [5708CD60]                 | FF1560CD0857
+[116] aload_0
+0002C9|          PUSH              12[ESP]                 | FF74240C
+[117] invokevirtual < BootstrapCL, Ljava/lang/StringBuilder;, append, (Ljava/lang/Object;)Ljava/lang/StringBuilder; >
+0002CD|          MOV                  EDX           4[ESP] | 8B542404
+0002D1|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002D4|          MOV                  EAX           4[ESP] | 8B442404
+0002D8|          MOV                  EDX            [ESP] | 8B1424
+0002DB|          CALL             100[ECX]                 | FF5164
+0002DE|          PUSH                 EAX                  | 50
+[120] invokevirtual < BootstrapCL, Ljava/lang/StringBuilder;, toString, ()Ljava/lang/String; >
+0002DF|          MOV                  EDX            [ESP] | 8B1424
+0002E2|          MOV                  ECX         -12[EDX] | 8B4AF4
+0002E5|          MOV                  EAX            [ESP] | 8B0424
+0002E8|          CALL              56[ECX]                 | FF5138
+0002EB|          PUSH                 EAX                  | 50
+[123] invokespecial < BootstrapCL, Ljava/lang/InternalError;, <init>, (Ljava/lang/String;)V >
+0002EC|          MOV                  EAX           4[ESP] | 8B442404
+0002F0|          MOV                  EDX            [ESP] | 8B1424
+0002F3|          CALL           [5708C040]                 | FF1540C00857
+[126] aload_0
+0002F9|          PUSH               4[ESP]                 | FF742404
+[127] invokevirtual < BootstrapCL, Ljava/lang/InternalError;, initCause, (Ljava/lang/Throwable;)Ljava/lang/Throwable; >
+0002FD|          MOV                  EDX           4[ESP] | 8B542404
+000301|          MOV                  ECX         -12[EDX] | 8B4AF4
+000304|          MOV                  EAX           4[ESP] | 8B442404
+000308|          MOV                  EDX            [ESP] | 8B1424
+00030B|          CALL              84[ECX]                 | FF5154
+00030E|          PUSH                 EAX                  | 50
+[130] checkcast < BootstrapCL, Ljava/lang/Error; >
+00030F|          MOV                  ECX            [ESP] | 8B0C24
+000312|          TEST                 ECX             ECX  | 85C9
+000314|          JEQ                    0                  | 7400
+000316|          MOV                  ECX         -12[ECX] | 8B49F4
+000319|          MOV                  ECX           4[ECX] | 8B4904
+00031C|          MOVZX                ECX           4[ECX] | 0FB74904
+000320|          CMP                  ECX             242  | 81F9F2000000
+000326|   LIKELY JEQ                    0                  | 3E7400
+000329|          INT                   68                  | CD44
+00032B| <<< 000327
+00032B| <<< 000314
+[133] athrow
+00032B|          MOV                  EAX            [ESP] | 8B0424
+00032E|          CALL           [57081378]                 | FF1578130857
+000334| <<< 000260
+[134] return
+000334| start of epilogue
+000334| From genEpilogue 3.SpaceToRelease is4
+000334| adjustStack by 1
+000334|          POP                  ECX                  | 59
+000335|          POP                  EBX                  | 5B
+000336|          POP                  EDI                  | 5F
+000337| adjustStack by 1
+000337|          POP                  ECX                  | 59
+000338|          POP              236[ESI]                 | 8F86EC000000
+00033E|          RET                                       | C3
+00033F| End of epilogue
+Exception Table:
+    trystart   tryend    catch    type
+          64      265      265    java.lang.Exception
+baseline End: Final machine code for method java.lang.reflect.Proxy$ProxySignature <clinit> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect29 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect29; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13805                  | 68ED350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect29 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect22 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect22; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13806                  | 68EE350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect22 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect33 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect33; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13807                  | 68EF350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect33 <init> ()V
+baseline Start: Final machine code for method java.util.logging.Logger <clinit> ()V
+000000| prologue for < BootstrapCL, Ljava/util/logging/Logger; >.<clinit> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13808                  | 68F0350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 16
+000013| Method LocalWords are=0. ParameterWords=0
+000013| EmptySatckOffset argument is 0
+000013|          CMP                  ESP         232[ESI] | 3BA6E8000000
+000019|   LIKELY JLGT                   0                  | 3E7700
+00001C|          INT                   67                  | CD43
+00001E| <<< 00001A
+00001E|          CMP              304[ESI]              0  | 83BE3001000000
+000025|          JEQ                    0                  | 7400
+000027|          CALL           [57081B10]                 | FF15101B0857
+00002D| <<< 000025
+00002D| End of prologue
+[0] new < BootstrapCL, Ljava/util/logging/Logger; >
+00002D|          PUSH                  44                  | 6A2C
+00002F|          PUSH           [57088504]                 | FF3504850857
+000035|          PUSH                   0                  | 6A00
+000037|          PUSH                   0                  | 6A00
+000039|          PUSH                   4                  | 6A04
+00003B|          PUSH                   8                  | 6A08
+00003D|          PUSH                3964                  | 687C0F0000
+000042|          MOV                  EAX          24[ESP] | 8B442418
+000046|          MOV                  EDX          20[ESP] | 8B542414
+00004A|          CALL           [57081340]                 | FF1540130857
+000050|          PUSH                 EAX                  | 50
+[3] dup
+000051|          PUSH                [ESP]                 | FF3424
+[4] ldc 30
+000054|          PUSH           [570803A0]                 | FF35A0030857
+[6] aconst_null
+00005A|          PUSH                   0                  | 6A00
+[7] invokespecial < BootstrapCL, Ljava/util/logging/Logger;, <init>, (Ljava/lang/String;Ljava/lang/String;)V >
+00005C|          MOV                  EAX           8[ESP] | 8B442408
+000060|          MOV                  EDX           4[ESP] | 8B542404
+000064|          CALL           [57089EE8]                 | FF15E89E0857
+[10] putstatic < BootstrapCL, Ljava/util/logging/Logger;, root, Ljava/util/logging/Logger; >
+00006A|          POP            [57089EDC]                 | 8F05DC9E0857
+[13] iconst_0
+000070|          PUSH                   0                  | 6A00
+[14] anewarray new < BootstrapCL, [Ljava/lang/Object; >
+000072|          PUSH                   2                  | 6A02
+000074|          PUSH                  12                  | 6A0C
+000076|          PUSH           [57080428]                 | FF3528040857
+00007C|          PUSH                   0                  | 6A00
+00007E|          PUSH                   4                  | 6A04
+000080|          PUSH                  12                  | 6A0C
+000082|          PUSH                3965                  | 687D0F0000
+000087|          MOV                  EAX          28[ESP] | 8B44241C
+00008B|          MOV                  EDX          24[ESP] | 8B542418
+00008F|          CALL           [57081350]                 | FF1550130857
+000095|          PUSH                 EAX                  | 50
+[17] putstatic < BootstrapCL, Ljava/util/logging/Logger;, lock, [Ljava/lang/Object; >
+000096|          POP            [57089EE4]                 | 8F05E49E0857
+[20] new < BootstrapCL, Ljava/util/logging/Logger$1; >
+00009C|          PUSH                   8                  | 6A08
+00009E|          PUSH           [5708850C]                 | FF350C850857
+0000A4|          PUSH                   0                  | 6A00
+0000A6|          PUSH                   0                  | 6A00
+0000A8|          PUSH                   4                  | 6A04
+0000AA|          PUSH                   8                  | 6A08
+0000AC|          PUSH                3966                  | 687E0F0000
+0000B1|          MOV                  EAX          24[ESP] | 8B442418
+0000B5|          MOV                  EDX          20[ESP] | 8B542414
+0000B9|          CALL           [57081340]                 | FF1540130857
+0000BF|          PUSH                 EAX                  | 50
+[23] dup
+0000C0|          PUSH                [ESP]                 | FF3424
+[24] invokespecial < BootstrapCL, Ljava/util/logging/Logger$1;, <init>, ()V >
+0000C3|          MOV                  EAX            [ESP] | 8B0424
+0000C6|          CALL           [5708C15C]                 | FF155CC10857
+[27] invokestatic < BootstrapCL, Ljava/security/AccessController;, doPrivileged, (Ljava/security/PrivilegedAction;)Ljava/lang/Object; >
+0000CC|          MOV                  EAX            [ESP] | 8B0424
+0000CF|          CALL           [5708A4E8]                 | FF15E8A40857
+0000D5|          PUSH                 EAX                  | 50
+[30] checkcast < BootstrapCL, Ljava/util/logging/Logger; >
+0000D6|          MOV                  ECX            [ESP] | 8B0C24
+0000D9|          TEST                 ECX             ECX  | 85C9
+0000DB|          JEQ                    0                  | 7400
+0000DD|          MOV                  ECX         -12[ECX] | 8B49F4
+0000E0|          MOV                  ECX           4[ECX] | 8B4904
+0000E3|          MOVZX                ECX           2[ECX] | 0FB74902
+0000E7|          CMP                  ECX            1289  | 81F909050000
+0000ED|   LIKELY JEQ                    0                  | 3E7400
+0000F0|          INT                   68                  | CD44
+0000F2| <<< 0000EE
+0000F2| <<< 0000DB
+[33] putstatic < BootstrapCL, Ljava/util/logging/Logger;, global, Ljava/util/logging/Logger; >
+0000F2|          POP            [57089EE0]                 | 8F05E09E0857
+[36] return
+0000F8| start of epilogue
+0000F8| From genEpilogue 3.SpaceToRelease is0
+0000F8|          POP                  EBX                  | 5B
+0000F9|          POP                  EDI                  | 5F
+0000FA| adjustStack by 1
+0000FA|          POP                  ECX                  | 59
+0000FB|          POP              236[ESI]                 | 8F86EC000000
+000101|          RET                                       | C3
+000102| End of epilogue
+baseline End: Final machine code for method java.util.logging.Logger <clinit> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 <init> ()V
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect4704; >.<init> ()V
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13809                  | 68F1350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 20
+000013|          PUSH                 EAX                  | 50
+000014| Method LocalWords are=1. ParameterWords=1
+000014| EmptySatckOffset argument is 0
+000014|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001A|   LIKELY JLGT                   0                  | 3E7700
+00001D|          INT                   67                  | CD43
+00001F| <<< 00001B
+00001F|          CMP              304[ESI]              0  | 83BE3001000000
+000026|          JEQ                    0                  | 7400
+000028|          CALL           [57081B10]                 | FF15101B0857
+00002E| <<< 000026
+00002E| End of prologue
+[0] return
+00002E| start of epilogue
+00002E| From genEpilogue 3.SpaceToRelease is4
+00002E| adjustStack by 1
+00002E|          POP                  ECX                  | 59
+00002F|          POP                  EBX                  | 5B
+000030|          POP                  EDI                  | 5F
+000031| adjustStack by 1
+000031|          POP                  ECX                  | 59
+000032|          POP              236[ESI]                 | 8F86EC000000
+000038|          RET                    4                  | C20400
+00003B| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 <init> ()V
+baseline Start: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+000000| prologue for < BootstrapCL, Lorg/jikesrvm/classloader/ReflectionBase$$Reflect4704; >.invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+000000|          PUSH             236[ESI]                 | FFB6EC000000
+000006|          MOV              236[ESI]            ESP  | 89A6EC000000
+00000C|          PUSH               13810                  | 68F2350000
+000011|          PUSH                 EDI                  | 57
+000012|          PUSH                 EBX                  | 53
+000013| Saved Register Size is =8
+000013| FirstParameterOffset is 28
+000013|          PUSH                 EAX                  | 50
+000014|          PUSH                 EDX                  | 52
+000015|          PUSH              28[ESP]                 | FF74241C
+000019| Method LocalWords are=3. ParameterWords=3
+000019| EmptySatckOffset argument is 0
+000019|          CMP                  ESP         232[ESI] | 3BA6E8000000
+00001F|   LIKELY JLGT                   0                  | 3E7700
+000022|          INT                   67                  | CD43
+000024| <<< 000020
+000024|          CMP              304[ESI]              0  | 83BE3001000000
+00002B|          JEQ                    0                  | 7400
+00002D|          CALL           [57081B10]                 | FF15101B0857
+000033| <<< 00002B
+000033| End of prologue
+[0] aload_1
+000033|          PUSH               4[ESP]                 | FF742404
+[1] aload_2
+000037|          PUSH               4[ESP]                 | FF742404
+[2] sipush 0
+00003B|          PUSH                   0                  | 6A00
+[5] aaload
+00003D|          POP                  EAX                  | 58
+00003E|          POP                  EDX                  | 5A
+00003F|          CMP               -4[EDX]            EAX  | 3942FC
+000042|   LIKELY JLGT                   0                  | 3E7700
+000045|          MOV              244[ESI]            EAX  | 8986F4000000
+00004B|          INT                   65                  | CD41
+00004D| <<< 000043
+00004D|          PUSH       [0+EDX+EAX<<2]                 | FF3482
+[6] checkcast < BootstrapCL, Ljava/lang/String; >
+000050|          MOV                  ECX            [ESP] | 8B0C24
+000053|          TEST                 ECX             ECX  | 85C9
+000055|          JEQ                    0                  | 7400
+000057|          MOV                  ECX         -12[ECX] | 8B49F4
+00005A|          CMP                  ECX       [57080708] | 3B0D08070857
+000060|   LIKELY JEQ                    0                  | 3E7400
+000063|          INT                   68                  | CD44
+000065| <<< 000061
+000065| <<< 000055
+[9] invokespecial < BootstrapCL, Ljava/io/IOException;, <init>, (Ljava/lang/String;)V >
+000065|          MOV                  EAX           4[ESP] | 8B442404
+000069|          MOV                  EDX            [ESP] | 8B1424
+00006C|          CALL           [57088864]                 | FF1564880857
+[12] aconst_null
+000072|          PUSH                   0                  | 6A00
+[13] nop
+[14] nop
+[15] areturn
+000074|          POP                  EAX                  | 58
+000075| start of epilogue
+000075| From genEpilogue 3.SpaceToRelease is12
+000075| Adjust stack . Adding to the sp. Sp= Sp+12
+000075|          ADD                  ESP              12  | 83C40C
+000078|          POP                  EBX                  | 5B
+000079|          POP                  EDI                  | 5F
+00007A| adjustStack by 1
+00007A|          POP                  ECX                  | 59
+00007B|          POP              236[ESI]                 | 8F86EC000000
+000081|          RET                   12                  | C20C00
+000084| End of epilogue
+baseline End: Final machine code for method org.jikesrvm.classloader.ReflectionBase$$Reflect4704 invokeInternal (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+Exception in thread "Jikes_RBoot_Thread": 
